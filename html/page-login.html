@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+</head>
+
+<body>
+<header></header>
+
+<div class="page-title">
+    <h1>로그인</h1>
+</div>
+
+<div class="container">
+    <div class="lg_con">
+        <div class="lg_header">
+            <h1>로그인 후 이용 가능합니다</h1>
+            <p>모바일 문자전단 솔루션, 우리 매장 홍보에 도움을 드립니다</p>
+        </div>
+
+        <hr class="divider sm">
+
+        <div class="lg_content row">
+            <div class="lg_logo col-1-3">
+                <img src="../IMG/login.gif" alt="로고">
+            </div>
+            <div class="lg_form col-2-3">
+                <form method="post" onsubmit="return login_submit(this);">
+                    <p class="p_input">
+                        <input type="text" class="type_l" name="id" placeholder="아이디">
+                    </p>
+                    <p class="p_input">
+                        <input type="password" class="type_l" name="pass" placeholder="비밀번호">
+                    </p>
+                    <button type="submit" class="btn_submit">로그인</button>
+                </form>
+            </div>
+        </div>
+
+        <hr class="divider sm">
+
+        <div class="lg_footer">
+            <div class="lg_desc">
+                <p>* 아이디나 비밀번호를 분실했을 경우<br><span>고객센터 (010-3515-1772, 010-8558-6609)</span>로 연락바랍니다</p>
+            </div>
+            <button class="btn btn-sm">홈으로</button>
+        </div>
+
+        <hr class="hr_80">
+    </div>
+</div>
+
+<footer></footer>
+</body>
+
+<!--<script src="/js/common.js"></script>-->
+<script>
+    $(function () {
+        $("head").load("template/head.html");
+        $("header").load("template/header.html");
+        $("footer").load("template/footer.html");
+    });
+</script>
+<script>
+    function login_submit(f) {
+
+        event.preventDefault();
+
+        var token = SET_TOKEN();
+
+        var fields = new Object();
+        fields.Token = token;
+        fields.Id = f.id.value;
+        fields.Pass = f.pass.value;
+
+        var is_login = call_Api("LOGIN", fields);
+
+        if (is_login.result == "true") {
+
+            console.log(is_login);
+
+            for (var key in is_login.data) {
+                set_cookie(key, is_login.data[key], 100);
+            }
+            if(is_login.data.passwordChange == 0) {
+                alert("비밀번호 변경을 해주셔야 합니다.");
+                location.href="/User/UserForm.php";
+            }else {
+                location.href = "/index.php";
+            }
+            return true;
+        } else {
+            clearAllCookies();
+
+            alert(is_login.message);
+
+            return false;
+        }
+
+    }
+</script>
+</html>

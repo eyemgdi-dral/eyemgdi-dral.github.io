@@ -1,0 +1,165 @@
+.d-m-row{display: none;}
+
+.table_10{width: 100px;position: absolute;height: 55px;right: 20px;top: 0;display: none;}
+
+.table_10 td{padding: 0;line-height: 50px;}
+
+.table_10 img{height: 35px;}
+
+.d-l{display: none;}
+
+@media (max-width: 1500px){
+	#menu-quick{visibility: hidden;width: 0;height: 0;overflow: hidden;}
+}
+
+@media (max-width: 1200px){
+	.btn_menu{ display: inline-block; position: absolute; left: 20px}
+	.btn_menu.moves{left: calc(100% - 45px);z-index: 99999;}
+	.btn_menu.moves .btn_icon:after,.btn_menu.moves .btn_icon:before{
+		background:white;
+	}
+
+	.login-con{display: block;}
+
+	nav{height: 60px;position: relative;}
+
+	.brand{top: 5px;width: calc(100% - 200px);text-align: center;left: 100px;}
+
+	.nav, .nav-top{display: none;}
+
+	.table_10{display: table;}
+
+	.phone{text-align: center;display: block;margin: 0 auto 30px}
+
+	.msg-manager{display: block;width: 100%;padding: 0;}
+
+	.banner-main{height: 300px;background: url("../IMG/banners/banner-main-2.gif") no-repeat center center;background-size: auto 100%;padding-top: calc(300px / 2 - 60px);}
+
+	.banner-main h1{color: white;font-family: "BM Hanna", sans-serif;font-size: 36px;line-height: 42px;font-weight: 400;}
+
+	.banner-sub-con .banner-sub{padding: 30px;}
+
+	.d-l{display: block;}
+
+	.dx-l{display: none;}
+
+	.nav-sub .nav-item {
+		padding: 0 20px;
+	}
+}
+
+@media (max-width: 768px){
+	.comms h1{text-align: center;}
+
+	.banner-main{height: 200px;background: url("../IMG/banners/banner-main-2.gif") no-repeat center center;background-size: auto 100%;padding-top: calc(200px / 2 - 45px);}
+
+	.banner-main h1{color: white;font-family: "BM Hanna", sans-serif;font-size: 24px;line-height: 30px;font-weight: 400;}
+
+	.banner-sub-con .banner-sub{display: block;width: 100%;margin-bottom: 20px;}
+
+	/*.features .feature-title {*//*    font-size: 12px;*//*}*/
+	.features .feature{ width: 33.3%}
+
+	.features .feature:nth-child(3){ border-right: 1px solid #ccc}
+
+	.features .feature:nth-child(4), .features .feature:nth-child(5){ width: 50%; border-top: none;}
+
+	/*.features .feature-img {*//*    width: 50px;*//*    height: 50px;*//*}*/
+	.bri_btn{ display: block; width: 100%; margin-bottom: 5px;}
+
+	*[class^='col'], *[class*=' col']{display: block;width: 100%;padding: 0;margin-bottom: 20px;}
+
+	*[class^='col']:last-child, *[class*=' col']:last-child{padding: 0;}
+
+	.list.type1 li{display: block;width: 100%;border: none;}
+
+	.list.type1 li br{display: none;}
+
+	th.p_10{display: none;}
+
+	td p.p_10{display: block;}
+
+	.type_lm, .type_m, .type_ms, .type_ms_x, .type_s, .type_ss, .type_address, .type_l{width: 100%;}
+
+	.dx-m{display: none;}
+
+	.d-m-row{display: table-row;}
+
+	.flyer-slider .flyer img{height: auto;width: 100%;margin: auto;}
+
+	.comms h1.highlight{font-size: 50px;height: 50px;}
+	.nav-sub-wrap{ border-bottom-color:#0367c8}
+	.nav-sub-wrap:before,
+	.nav-sub-wrap:after{
+		content: "";
+		background-color: #555;
+		position: absolute;
+		top: 28px;
+		transition: .3s;
+		z-index: 3;
+		right:15px;
+		width: 15px;
+		height: 2px;
+	}
+
+	.nav-sub-wrap:before{
+		transform: rotate(45deg);
+		right: 25px;
+	}
+
+	.nav-sub-wrap:after{
+		transform: rotate(135deg);
+	}
+
+	.nav-sub .nav-item{
+		display: block;
+	}
+
+	.nav-sub+.hvr{
+		visibility: hidden;
+	}
+
+	.nav-sub .nav-item.on{
+		/*position: absolute;*/
+		top: 0;
+		height: 55px;
+		width: 100%;
+		background: #fff;
+		z-index: 2;
+	}
+
+	.nav-sub .nav-item{
+		position: relative;
+		height: 0;
+		top: 0;
+		width: 100%;
+		background: #fff;
+		z-index: 1;
+		transition: .3s;
+		overflow: hidden;
+	}
+
+	.nav-sub-wrap.expanded .nav-sub .nav-item{
+		position: relative;
+		height: 55px;
+	}
+
+	.nav-sub-wrap.expanded:before{
+		transform: rotate(135deg);
+	}
+
+	.nav-sub-wrap.expanded:after{
+		transform: rotate(45deg);
+	}
+
+}
+
+@media (max-width: 500px){
+	.features .feature{width: 100% !important;padding: 20px 0 20px 30px;border: 1px solid #ccc;text-align: left; margin: 5px; border: 1px solid #ccc !important;}
+
+	.features .feature-title{font-size: 14px;line-height: 50px;}
+
+	.features .feature-img{display: inline-block;width: 50px;height: 50px;vertical-align: middle;margin: 0 30px 10px 0;}
+
+	.comms h1.highlight{font-size: 30px;height: 30px;}
+}

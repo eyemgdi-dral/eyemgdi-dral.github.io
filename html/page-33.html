@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+</head>
+
+<body>
+<header></header>
+
+<div class="page-title">
+    <h1>문자보내기</h1>
+</div>
+
+<div class="nav-sub-wrap">
+    <div class="container">
+        <ul class="nav-sub">
+            <li class="nav-item">스마트전단</li>
+            <li class="nav-item">이미지전단</li>
+            <li class="nav-item on">나의 상품</li>
+            <li class="nav-item">상품 카테고리 관리</li>
+            <li class="nav-item">이미지 요청</li>
+        </ul>
+        <div class="hvr"></div>
+    </div>
+</div>
+
+<div class="container">
+    <h1 class="sub-title">나의 상품</h1>
+
+    <form id="userForm" name="userForm" onsubmit="return userUpdate(this);" enctype="multipart/form-data">
+        <table class="info_box5">
+            <tr>
+                <th>이미지 첨부</th>
+                <td style="font-size: 15px;">
+                    <div class="file-input">
+                        <input type="text" readonly="" id="filename" value="선택한 파일 없음">
+                        <button type="button" value="파일찾기" class="btn_file"><span>파일찾기</span></button>
+                        <input type="file" name="file" class="type_ms" value="Event 빨색간색" accept=".jpg, .JPG, .JPEG, .jpeg, .png, .PNG"
+                               onchange="$('#filename').val(this.value.split('\\')[2]).show()">
+                    </div>
+                    <div class="upload-img_wrap">
+                        <a class="close" href="javascript:void(0)" onclick="">&#10006;</a>
+                        <img src="../IMG/products/product-1.gif" alt="">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th class="required">카테고리</th>
+                <td>
+                    <p class="p_10">카테고리</p>
+                    <select class="type_ms" name="Price">
+                        <option value="0">금액 선택</option>
+                        <option value="200000">200,000</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th class="required">제목</th>
+                <td>
+                    <p class="p_10">제목</p>
+                    <input type="text" name="" class="type_ms" value="">
+                </td>
+            </tr>
+            <tr>
+                <th>규격</th>
+                <td>
+                    <p class="p_10">규격</p>
+                    <input type="text" name="Owner_Name" class="type_ms" value="">
+                </td>
+            </tr>
+            <tr>
+                <th>정상가</th>
+                <td style="font-size: 15px;">
+                    <input type="text" class="type_ms it_num" value="">
+                    <span class="">원</span>
+                </td>
+            </tr>
+            <tr>
+                <th>할인가</th>
+                <td style="font-size: 15px;">
+                    <input type="text" class="type_ms it_num s_red" value="">
+                    <span class="">원</span>
+                </td>
+            </tr>
+        </table>
+        <hr class="hr_40">
+        <div class="btn_box">
+            <a href="javascript:void(0)" onclick="" class="bri_btn btn_30 btn-big">수정하기</a>
+            <a href="page-32.html" class="bri_btn btn_30_ol btn-big">목록으로</a>
+        </div>
+    </form>
+</div>
+
+<footer></footer>
+</body>
+
+<!--<script src="/js/common.js"></script>-->
+<script>
+    $(function () {
+        $("head").load("template/head.html");
+        $("header").load("template/header.html");
+        $("footer").load("template/footer.html");
+    });
+</script>
+</html>

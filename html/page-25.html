@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+</head>
+
+<body>
+<header></header>
+
+<div class="page-title">
+    <h1>문자보내기</h1>
+</div>
+
+<div class="nav-sub-wrap">
+    <div class="container">
+        <ul class="nav-sub">
+            <li class="nav-item">스마트전단</li>
+            <li class="nav-item on">이미지전단</li>
+            <li class="nav-item">나의 상품</li>
+            <li class="nav-item">상품 카테고리 관리</li>
+            <li class="nav-item">이미지 요청</li>
+        </ul>
+        <div class="hvr"></div>
+    </div>
+</div>
+
+<div class="container">
+    <ul class="sub-nav">
+        <li class="sub-nav-item"></li>
+    </ul>
+
+    <h1 class="sub-title">이미지 전단</h1>
+    <div class="sch_box2">
+        <form onsubmit="search_add(this)">
+            <select name="sfl" id="sfl" class="sfl">
+                <option>상태</option>
+                <option></option>
+            </select>
+            <input type="text" name="stx" value="" required="" id="stx" class="sch_input" size="25" maxlength="20">
+            <button type="submit" value="검색" class="btn_sch"><span>검색</span></button>
+        </form>
+    </div>
+
+    <div class="list_box">
+
+        <form>
+            <table class="list_lay type2 customer_list">
+                <colgroup>
+                    <col>
+                    <col width="10%">
+                    <col width="20%">
+                    <col width="15%">
+                    <col width="11%">
+                    <col width="10%">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th class="show_td_lm">제목</th>
+                    <th class="show_td_s">제목</th>
+                    <th class="show_td_lm">상품이미지</th>
+                    <th class="show_td_s">상품이미지</th>
+                    <th class="show_td_lm">행사기간</th>
+                    <th class="show_td_lm">등록일시</th>
+                    <th class="show_td_lm">상태</th>
+                    <th class="show">비고</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="show_td_lm td_left">3월 특가 이벤트</td>
+                        <td class="show_td_s td_left">3월 특가 이벤트</td>
+                        <td class="show_td_lm">A 타입</td>
+                        <td class="show_td_s">A 타입</td>
+                        <td class="show_td_lm">2021.03.01 ~2021.03.31</td>
+                        <td class="show_td_lm">15:20</td>
+                        <td class="show_td_lm"><span class="s_green">대기</span></td>
+                        <td class="show">
+                            <a href="#">
+                                <span class="btn_edit">수정</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="show_td_lm td_left">채소 할인상품 특가전</td>
+                        <td class="show_td_s td_left">채소 할인상품 특가전</td>
+                        <td class="show_td_lm">B 타입</td>
+                        <td class="show_td_s">B 타입</td>
+                        <td class="show_td_lm">2021.03.01 ~2021.03.31</td>
+                        <td class="show_td_lm">15:20</td>
+                        <td class="show_td_lm"><span class="s_blue">작업중</span></td>
+                        <td class="show">-</td>
+                    </tr>
+                    <tr>
+                        <td class="show_td_lm td_left">3월 특가 이벤트</td>
+                        <td class="show_td_s td_left">3월 특가 이벤트</td>
+                        <td class="show_td_lm">C 타입</td>
+                        <td class="show_td_s">C 타입</td>
+                        <td class="show_td_lm">2021.03.01 ~2021.03.31</td>
+                        <td class="show_td_lm">2021.03.01</td>
+                        <td class="show_td_lm"><span class="s_green">대기</span></td>
+                        <td class="show">
+                            <a href="#">
+                                <span class="btn_view">보기</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="show_td_lm td_left">채소 할인상품 특가전</td>
+                        <td class="show_td_s td_left">채소 할인상품 특가전</td>
+                        <td class="show_td_lm">D 타입</td>
+                        <td class="show_td_s">D 타입</td>
+                        <td class="show_td_lm">2021.03.01 ~2021.03.31</td>
+                        <td class="show_td_lm">2021.03.01</td>
+                        <td class="show_td_lm"><span class="s_blue">작업중</span></td>
+                        <td class="show">
+                            <a href="#">
+                                <span class="btn_view">보기</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="show_td_lm td_left">3월 특가 이벤트</td>
+                        <td class="show_td_s td_left">3월 특가 이벤트</td>
+                        <td class="show_td_lm">E 타입</td>
+                        <td class="show_td_s">E 타입</td>
+                        <td class="show_td_lm">2021.03.01 ~2021.03.31</td>
+                        <td class="show_td_lm">2021.03.01</td>
+                        <td class="show_td_lm">작업완료</td>
+                        <td class="show">
+                            <a href="#">
+                                <span class="btn_edit">수정</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="show_td_lm td_left">채소 할인상품 특가전</td>
+                        <td class="show_td_s td_left">채소 할인상품 특가전</td>
+                        <td class="show_td_lm">F 타입</td>
+                        <td class="show_td_s">F 타입</td>
+                        <td class="show_td_lm">2021.03.01 ~2021.03.31</td>
+                        <td class="show_td_lm">2021.03.01</td>
+                        <td class="show_td_lm"><span class="s_blue">작업중</span></td>
+                        <td class="show">-</td>
+                    </tr>
+                    <tr>
+                        <td class="show_td_lm td_left">3월 특가 이벤트</td>
+                        <td class="show_td_s td_left">3월 특가 이벤트</td>
+                        <td class="show_td_lm">G 타입</td>
+                        <td class="show_td_s">G 타입</td>
+                        <td class="show_td_lm">2021.03.01 ~2021.03.31</td>
+                        <td class="show_td_lm">2021.03.01</td>
+                        <td class="show_td_lm"><span class="s_green">대기</span></td>
+                        <td class="show">
+                            <a href="#">
+                                <span class="btn_edit">수정</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="show_td_lm td_left">채소 할인상품 특가전</td>
+                        <td class="show_td_s td_left">채소 할인상품 특가전</td>
+                        <td class="show_td_lm">H 타입</td>
+                        <td class="show_td_s">H 타입</td>
+                        <td class="show_td_lm">2021.03.01 ~2021.03.31</td>
+                        <td class="show_td_lm">2021.03.01</td>
+                        <td class="show_td_lm"><span class="s_blue">작업중</span></td>
+                        <td class="show">-</td>
+                    </tr>
+                    <tr>
+                        <td class="show_td_lm td_left">3월 특가 이벤트</td>
+                        <td class="show_td_s td_left">3월 특가 이벤트</td>
+                        <td class="show_td_lm">I 타입</td>
+                        <td class="show_td_s">I 타입</td>
+                        <td class="show_td_lm">2021.03.01 ~2021.03.31</td>
+                        <td class="show_td_lm">2021.03.01</td>
+                        <td class="show_td_lm"><span class="s_red">재요청</span></td>
+                        <td class="show">
+                            <a href="#">
+                                <span class="btn_view">보기</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="show_td_lm td_left">채소 할인상품 특가전</td>
+                        <td class="show_td_s td_left">채소 할인상품 특가전</td>
+                        <td class="show_td_lm">J 타입</td>
+                        <td class="show_td_s">J 타입</td>
+                        <td class="show_td_lm">2021.03.01 ~2021.03.31</td>
+                        <td class="show_td_lm">2021.03.01</td>
+                        <td class="show_td_lm"><span class="s_silver">승인</span></td>
+                        <td class="show">
+                            <a href="#">
+                                <span class="btn_view">보기</span>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+
+    </div>
+
+    <div class="pg_wrap">
+        <span class="pg">
+            <a href="" class="pg_page pg_start">&#x276E;</a>
+            <a href="" class="pg_page pg_prev">&#x276E;&#x276E;</a>
+            <a href="" class="pg_page page_no">1</a>
+            <strong class="pg_current">2</strong>
+            <a href="" class="pg_page page_no">3</a>
+            <a href="" class="pg_page pg_next">&#x276F;</a>
+            <a href="" class="pg_page pg_end">&#x276F;&#x276F;</a>
+        </span>
+    </div>
+
+    <hr class="hr_40">
+    <div class="btn_box2">
+        <div class="col_right">
+            <a href="page-33.html" class="bri_btn btn_30">등록하기</a>
+        </div>
+    </div>
+    <hr class="hr_80">
+</div>
+
+<footer></footer>
+</body>
+
+<!--<script src="/js/common.js"></script>-->
+<script>
+    $(function () {
+        $("head").load("template/head.html");
+        $("header").load("template/header.html");
+        $("footer").load("template/footer.html");
+    });
+</script>
+</html>

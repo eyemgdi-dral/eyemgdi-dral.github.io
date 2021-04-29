@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+</head>
+
+<body>
+<header></header>
+
+<div class="page-title">
+    <h1>주문목록</h1>
+</div>
+
+<div class="container">
+    <h1 class="sub-title">주문목록</h1>
+
+    <h1 class="section-title">주문자정보</h1>
+
+    <table class="info_box5">
+        <tbody>
+        <tr class="top">
+            <th class="p_10">상태</th>
+            <td>
+                <p class="p_10">상태</p>
+                <select class="type_m">
+                    <option value="">주문완료</option>
+                </select>
+                <button class="btn">저장</button>
+            </td>
+            <th>주문일시</th>
+            <td>
+                <span>2021 .03 .01 15:20:45</span>
+            </td>
+        </tr>
+        <tr>
+            <th>결제금액</th>
+            <td>
+                <span>50,000원</span>
+            </td>
+            <th>결제방법</th>
+            <td>
+                <span>배달(카드)</span>
+            </td>
+        </tr>
+        <tr>
+            <th class="p_10">전단 제목</th>
+            <td colspan="3">
+                <p class="p_10">전단 제목</p>
+                <span>3월 이벤트 세일!</span>
+            </td>
+        </tr>
+        <tr>
+            <th>주문자</th>
+            <td>
+                <span>홍길동</span>
+            </td>
+            <th>전화번호</th>
+            <td>
+                <span>010-123-4567</span>
+            </td>
+        </tr>
+        <tr>
+            <th class="p_10">배달주소</th>
+            <td colspan="3">
+                <p class="p_10">배달주소</p>
+                <span>서울시 금천구 가산동 1번지 1층 101호</span>
+            </td>
+        </tr>
+        <tr>
+            <th class="p_10">추가주문</th>
+            <td colspan="3">
+                <p class="p_10">추가주문</p>
+                <span>서울우유 1,000리터</span>
+                <hr>상추 한 봉지
+                <hr>추가해서 보내주세요
+            </td>
+        </tr>
+        <tr>
+            <th class="p_10">요청사항</th>
+            <td colspan="3">
+                <p class="p_10">요청사항</p>
+                <span>디자인 예쁘게 부탁드려요~ (ㅋㅋ)</span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h1 class="section-title">주문목록</h1>
+
+    <div class="list_box">
+        <form>
+            <table class="list_lay type2 customer_list">
+                <colgroup>
+                    <col>
+                    <col width="17%">
+                    <col width="17%">
+                    <col width="17%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th class="show">제목</th>
+                        <th class="show">단가</th>
+                        <th class="show">수량</th>
+                        <th class="show">소계</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="show td_left">상추 1통</td>
+                        <td class="show s_violet">2,000 원</td>
+                        <td class="show">-</td>
+                        <td class="show">2,000 원</td>
+                    </tr>
+                    <tr>
+                        <td class="show td_left">삼겹살 1근</td>
+                        <td class="show s_violet">2,000 원</td>
+                        <td class="show">-</td>
+                        <td class="show">2,000 원</td>
+                    </tr>
+                    <tr>
+                        <td class="show td_left">하우스 수방 1통</td>
+                        <td class="show s_violet">2,000 원</td>
+                        <td class="show">-</td>
+                        <td class="show">2,000 원</td>
+                    </tr>
+                </tbody>
+                <tfooter>
+                    <tr class="table_footer">
+                        <td class="show td_left bg-violet" colspan="3">총금액</td>
+                        <td class="show s_red">2,000 원</td>
+                    </tr>
+                </tfooter>
+            </table>
+        </form>
+
+    </div>
+
+    <hr class="hr_40">
+
+    <div class="btn_box">
+        <btn class="bri_btn btn_30 btn-big">목록으로</btn>
+    </div>
+
+    <hr class="hr_40">
+</div>
+
+<footer></footer>
+</body>
+
+<!--<script src="/js/common.js"></script>-->
+<script>
+    $(function () {
+        $("head").load("template/head.html");
+        $("header").load("template/header.html");
+        $("footer").load("template/footer.html");
+    });
+</script>
+</html>

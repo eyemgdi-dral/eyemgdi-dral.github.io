@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+</head>
+
+<body>
+<header></header>
+
+<div class="page-title">
+    <h1>문자보내기</h1>
+</div>
+
+<div class="nav-sub-wrap">
+    <div class="container">
+        <ul class="nav-sub">
+            <li class="nav-item on">스마트전단</li>
+            <li class="nav-item">이미지전단</li>
+            <li class="nav-item">나의 상품</li>
+            <li class="nav-item">상품 카테고리 관리</li>
+            <li class="nav-item">이미지 요청</li>
+        </ul>
+        <div class="hvr"></div>
+    </div>
+</div>
+<script>
+
+</script>
+
+<div class="container">
+    <link rel="stylesheet" type="text/css" href="../PLUGIN/datepicker/datepicker.min.css">
+    <script src="../PLUGIN/datepicker/datepicker.min.js"></script>
+    <script src="../PLUGIN/datepicker/datepicker.ko.js"></script>
+
+    <h1 class="sub-title">스마트 전단</h1>
+
+    <h1 class="section-title">상단이미지</h1>
+    <table class="info_box5">
+        <tr class="top">
+            <th class="p_10">상태</th>
+            <td>
+                <p class="p_10">이미지 첨부</p>
+                <span class="text-primary">진행중</span>
+            </td>
+        </tr>
+        <tr>
+            <th class="p_10">URL</th>
+            <td>
+                <p class="p_10">이미지 첨부</p>
+                <a>alimy.co.kr/admin</a>
+            </td>
+        </tr>
+        <tr>
+            <th class="required p_10">제목</th>
+            <td>
+                <p class="p_10">카테고리</p>
+                <input type="text" class="type_l" value="3월 특가 이벤트">
+            </td>
+        </tr>
+        <tr>
+            <th class="p_10">배경이미지</th>
+            <td>
+                <p class="p_10">제목</p>
+
+                <div class="file-input">
+                    <input type="text" class="file-name" readonly>
+                    <button type="submit" value="검색" class="file-browse"><span>검색</span></button>
+                    <input type="file" name="file" class="type_ms" value="Event 빨색간색">
+                </div>
+
+            </td>
+        </tr>
+        <tr>
+            <th class="p_10 required">사용 여부</th>
+            <td>
+                <p class="p_10">규격</p>
+                <input id="radio1" type="radio" class="type_ms" name="rad1">
+                <label for="radio1">사용</label>
+                <input id="radio2" type="radio" class="type_ms" name="rad1">
+                <label for="radio2">사용</label>
+            </td>
+        </tr>
+        <tr>
+            <th class="p_10 required">행사 기간</th>
+            <td>
+                <p class="p_10">정상가</p>
+                <input type="text" class="date-picker" autocomplete="off" placeholder="날짜선택" readonly>
+                <span class="p_10_x">~</span>
+                <input type="text" class="date-picker" autocomplete="off" placeholder="날짜선택" readonly>
+            </td>
+        </tr>
+        <tr>
+            <th class="p_10">최소 주문 금액</th>
+            <td>
+                <p class="p_10">할인가</p>
+                <input type="text" class="type_ss it_num" value=""> 원 이상
+            </td>
+        </tr>
+    </table>
+    <h1 class="section-title">상단이미지</h1>
+    <table class="info_box5">
+        <tr class="top">
+            <th class="p_10 required">카테고리명</th>
+            <td>
+                <p class="p_10">카테고리명</p>
+                <input type="text" class="type_l">
+            </td>
+        </tr>
+        <tr>
+            <th class="p_10">카테고리 배경컬러</th>
+            <td>
+                <p class="p_10">카테고리 배경컬러</p>
+                <input type="radio" class="cp cp_1 cp_x" id="rad1" name="color1"><label for="rad1"></label>
+                <input type="radio" class="cp cp_2 cp_x" id="rad2" name="color1"><label for="rad2"></label>
+                <input type="radio" class="cp cp_3" id="rad3" name="color1"><label for="rad3"></label>
+                <input type="radio" class="cp cp_4" id="rad4" name="color1"><label for="rad4"></label>
+                <input type="radio" class="cp cp_5" id="rad5" name="color1"><label for="rad5"></label>
+                <input type="radio" class="cp cp_6" id="rad6" name="color1"><label for="rad6"></label>
+                <input type="radio" class="cp cp_7" id="rad7" name="color1"><label for="rad7"></label>
+                <input type="radio" class="cp cp_8" id="rad8" name="color1"><label for="rad8"></label>
+                <input type="radio" class="cp cp_9" id="rad9" name="color1"><label for="rad9"></label>
+
+            </td>
+        </tr>
+        <tr>
+            <th class="p_10">텍스트 컬러</th>
+            <td>
+                <p class="p_10">텍스트 컬러</p>
+                <input type="radio" class="cp cp_1 cp_x" id="rad11" name="color2"><label for="rad11"></label>
+                <input type="radio" class="cp cp_2 cp_x" id="rad12" name="color2"><label for="rad12"></label>
+                <input type="radio" class="cp cp_3" id="rad13" name="color2"><label for="rad13"></label>
+                <input type="radio" class="cp cp_4" id="rad14" name="color2"><label for="rad14"></label>
+                <input type="radio" class="cp cp_5" id="rad15" name="color2"><label for="rad15"></label>
+                <input type="radio" class="cp cp_6" id="rad16" name="color2"><label for="rad16"></label>
+                <input type="radio" class="cp cp_7" id="rad17" name="color2"><label for="rad17"></label>
+                <input type="radio" class="cp cp_8" id="rad18" name="color2"><label for="rad18"></label>
+                <input type="radio" class="cp cp_9" id="rad19" name="color2"><label for="rad19"></label>
+
+            </td>
+        </tr>
+        <tr>
+            <th class="p_10">상푸 배경컬러</th>
+            <td>
+                <p class="p_10">상푸 배경컬러</p>
+                <input type="radio" class="cp cp_1 cp_x" id="rad21" name="color3"><label for="rad21"></label>
+                <input type="radio" class="cp cp_2 cp_x" id="rad22" name="color3"><label for="rad22"></label>
+                <input type="radio" class="cp cp_3" id="rad23" name="color3"><label for="rad23"></label>
+                <input type="radio" class="cp cp_4" id="rad24" name="color3"><label for="rad24"></label>
+                <input type="radio" class="cp cp_5" id="rad25" name="color3"><label for="rad25"></label>
+                <input type="radio" class="cp cp_6" id="rad26" name="color3"><label for="rad26"></label>
+                <input type="radio" class="cp cp_7" id="rad27" name="color3"><label for="rad27"></label>
+                <input type="radio" class="cp cp_8" id="rad28" name="color3"><label for="rad28"></label>
+                <input type="radio" class="cp cp_9" id="rad29" name="color3"><label for="rad29"></label>
+            </td>
+        </tr>
+        <!--responsive-row : toggling table row-->
+        <tr class="dx-m">
+            <td colspan="2" class="text-center">
+                <a class="bri_btn btn_30">확인</a>
+            </td>
+        </tr>
+        <tr class="d-m-row">
+            <td class="text-center">
+                <a class="bri_btn btn_30">확인</a>
+            </td>
+        </tr>
+    </table>
+
+    <hr class="hr_20">
+    <hr class="divider sm">
+
+    <div class="row lh_40">
+        <div class="col-2-5">
+            <button class="btn type_l bg-green b-0">채소 파격 할인1</button>
+        </div>
+        <div class="col-2-5">
+            <button class="btn_edit">보기</button>
+            <button class="btn_view">삭제</button>
+            <input type="checkbox" id="cb1">
+            <label class="ml-10" for="cb1">카테고리명 미노출 </label>
+        </div>
+        <div class="col-1-5 text-right">
+            <div class="ctrl type1">
+                <div class="up"></div>
+                <div class="down"></div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="divider sm">
+
+    <div class="row lh_40">
+        <div class="col-2-5">
+            <button class="btn type_l bg-red b-0">채소 파격 할인1</button>
+        </div>
+        <div class="col-2-5">
+            <button class="btn_edit">보기</button>
+            <button class="btn_view">삭제</button>
+            <input type="checkbox" id="cb2">
+            <label class="ml-10" for="cb2">카테고리명 미노출</label>
+        </div>
+        <div class="col-1-5 text-right">
+            <div class="ctrl type1">
+                <div class="up"></div>
+                <div class="down"></div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="divider sm">
+
+    <table class="info_box5">
+        <tr>
+            <th class="p_10">사진 상품 행추가</th>
+            <td>
+                <p class="p_10">이미지 첨부</p>
+                <select>
+                    <option value="">그룹</option>
+                </select>
+                <button class="btn">추가</button>
+            </td>
+        </tr>
+        <tr>
+            <th class="p_10">글자 상품 열 추가</th>
+            <td>
+                <p class="p_10">이미지 첨부</p>
+                <select>
+                    <option value="">그룹</option>
+                </select>
+                <button class="btn">추가</button>
+            </td>
+        </tr>
+        <tr>
+            <th class="p_10">이미지 추가</th>
+            <td>
+                <button class="btn">추가</button>
+            </td>
+        </tr>
+    </table>
+    <!--CARD SECTION-->
+    <div class="movable">
+        <div class="row">
+            <div class="col-1-4">
+                <div class="card card-vertical">
+                    <div class="card-img">
+                        <img src="../IMG/products/product-2.gif" alt="product-2">
+                    </div>
+                    <div class="manage fs-0">
+                        <button class="type_l btn_20">바코드선택</button>
+                        <button class="type_m btn_120">배경</button>
+                        <button class="type_m btn_130">라벨</button>
+                    </div>
+                    <div class="card-detail">
+                        <input class="type_l" type="text" value="대파">
+                        <input class="type_l" type="text" value="1단">
+                        <input class="type_l" type="number" value="2000">
+                        <input class="type_l" type="text">
+                        <button>Button</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-4">
+                <div class="card card-vertical">
+                    <div class="card-img"></div>
+                    <div class="manage fs-0">
+                        <button class="type_l btn_20">바코드선택</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-4">
+                <div class="card card-vertical">
+                    <div class="card-img"></div>
+                    <div class="manage fs-0">
+                        <button class="type_l btn_20">바코드선택</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-1-4">
+                <div class="card card-vertical">
+                    <div class="card-img"></div>
+                    <div class="manage fs-0">
+                        <button class="type_l btn_20">바코드선택</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="ctrl type1">
+            <div class="up"></div>
+            <div class="down"></div>
+            <button class="btn_edit mt-5">삭제</button>
+        </div>
+    </div>
+    <!--/CARD SECTION-->
+
+    <div class="movable">
+
+        <table class="info_box6">
+            <colgroup>
+                <col width="100px">
+                <col width="200px">
+                <col>
+                <col>
+                <col>
+                <col width="100px">
+                <col width="100px">
+            </colgroup>
+            <tr>
+                <th>상품선택</th>
+                <th>제목</th>
+                <th>규격</th>
+                <th>정상가</th>
+                <th>판매가</th>
+                <th>행추가/삭제</th>
+                <th>순서변경</th>
+            </tr>
+            <tr>
+                <td><button class="btn btn_10 w-0">선택</button></td>
+                <td><input class="type_l" type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><div class="ctrl type3">
+                    <div class="up">+</div>
+                    <div class="down">-</div>
+                </div></td>
+                <td>
+                    <div class="ctrl type2">
+                        <div class="up"></div>
+                        <div class="down"></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><button class="btn btn_10 w-0">선택</button></td>
+                <td><input class="type_l" type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><div class="ctrl type3">
+                    <div class="up">+</div>
+                    <div class="down">-</div>
+                </div></td>
+                <td><div class="ctrl type2">
+                    <div class="up"></div>
+                    <div class="down"></div>
+                </div></td>
+            </tr>
+        </table>
+
+        <div class="ctrl type1">
+            <div class="up"></div>
+            <div class="down"></div>
+            <button class="btn_edit mt-5">삭제</button>
+        </div>
+    </div>
+
+    <hr class="hr_40">
+    <div class="btn_box">
+        <btn class="bri_btn btn_30_ol btn-big">저장</btn>
+        <btn class="bri_btn btn_30 btn-big">미리보기</btn>
+        <btn class="bri_btn btn_40 btn-big">친구톡 보내기</btn>
+        <btn class="bri_btn btn_40 btn-big">문자 보내기</btn>
+        <btn class="bri_btn btn_20_ol btn-big">초기화</btn>
+        <btn class="bri_btn btn_20 btn-big">전단복사</btn>
+        <btn class="bri_btn btn_110 btn-big">전단삭제</btn>
+        <hr class="hr_20">
+        <p class="text-center">※ ‘미리보기, 친구톡 보내기, 문자 보내기’ 는 자동 저장된 후 실행됩니다. </p>
+    </div>
+
+    <hr class="hr_40">
+</div>
+<script>
+    $('.date-picker').datepicker({
+        language: 'ko',
+        autoClose: true
+    });
+</script>
+<footer></footer>
+</body>
+
+<!--<script src="/js/common.js"></script>-->
+<script>
+    $(function () {
+        $("head").load("template/head.html");
+        $("header").load("template/header.html");
+        $("footer").load("template/footer.html");
+    });
+</script>
+</html>

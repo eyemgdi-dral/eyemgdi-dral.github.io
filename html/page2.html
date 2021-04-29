@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<header></header>
+<div class="container">
+    <div class="tab_wrap">
+        <div class="tabs"><a href="#" class="on">문자보내기</a></div>
+        <div class="tabs"><a href="#">수신거부목록</a></div>
+        <select>
+            <option value="#" selected="">고객관리</option>
+            <option value="#">문자보내기</option>
+        </select>
+    </div>
+</div>
+<footer></footer>
+</body>
+<script>
+    $(function () {
+        $("head").load("template/head.html");
+        $("header").load("template/header.html");
+        $("footer").load("template/footer.html");
+    });
+</script>
+</html>

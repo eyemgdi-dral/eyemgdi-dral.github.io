@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+</head>
+
+<body>
+<header class="home"></header>
+<div class="banner-main">
+    <div class="container">
+        <h1>장문, 단문, 포토문자, <br>
+            MMS, 대량문자까지 <br>
+            쉽고 간편하게 한번에 전송!</h1>
+    </div>
+</div>
+<hr class="hr_40">
+<div class="container">
+
+    <div class="banner-sub-con">
+        <div class="banner-sub bg-purple1">
+            <h1>문자보내기</h1>
+            <p>장문 단문도 쉽고 간편하게 한번에!</p>
+            <button class="btn">바로가기 <span>❯</span></button>
+        </div>
+        <div class="banner-sub bg-yellow1">
+            <h1>톡 보내기</h1>
+            <p>대용량 이미지도 쉽고 간편하게!</p>
+            <button class="btn">바로가기 <span>❯</span></button>
+        </div>
+    </div>
+    <hr class="hr_40">
+
+    <div class="features">
+        <div class="feature">
+            <div class="feature-img">
+                <img src="../IMG/feature-1.gif" alt="">
+            </div>
+            <span class="feature-title">발송내역</span>
+        </div>
+        <div class="feature">
+            <div class="feature-img">
+                <img src="../IMG/feature-2.gif" alt="">
+            </div>
+            <span class="feature-title">이용요금안내</span>
+        </div>
+        <div class="feature">
+            <div class="feature-img">
+                <img src="../IMG/feature-3.gif" alt="">
+            </div>
+            <span class="feature-title">전단관리</span>
+        </div>
+        <div class="feature">
+            <div class="feature-img">
+                <img src="../IMG/feature-4.gif" alt="">
+            </div>
+            <span class="feature-title">문자샘플</span>
+        </div>
+        <div class="feature">
+            <div class="feature-img">
+                <img src="../IMG/feature-5.gif" alt="">
+            </div>
+            <span class="feature-title">고객관리</span>
+        </div>
+    </div>
+    <hr class="hr_40">
+
+    <div class="row comms type2">
+        <div class="col-1-3">
+            <h1>상담문의</h1>
+            <h1 class="highlight">02-555-4444</h1>
+            <p>평 일 : 09:00 ~ 18:00 (점심 : 12:00 ~ 13:00)<br> 토요일, 일요일, 공휴일 휴무</p>
+
+            <hr class="divider sm">
+
+            <h1>상담문의</h1>
+            <table>
+                <tr>
+                    <td>충전 코인 안내사항 입니다.</td>
+                    <td>21-03-30</td>
+                </tr>
+                <tr>
+                    <td>스마트전단 금칙어</td>
+                    <td>21-03-30</td>
+                </tr>
+                <tr>
+                    <td>문자발송 시간제한</td>
+                    <td>21-03-30</td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-2-3">
+            <div class="flyer-slider">
+                <div class="flyer">
+                    <img src="../IMG/flyers/flyer-1.gif" alt="flyer">
+                </div>
+                <div class="flyer">
+                    <img src="../IMG/flyers/flyer-2.gif" alt="flyer">
+                </div>
+                <div class="flyer">
+                    <img src="../IMG/flyers/flyer-3.gif" alt="flyer">
+                </div>
+                <div class="flyer">
+                    <img src="../IMG/flyers/flyer-3.gif" alt="flyer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+<hr class="hr_20">
+
+<footer></footer>
+
+</body>
+
+<!--<script src="/js/common.js"></script>-->
+
+<script src="../PLUGIN/slick-1.8.1/slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    $(function () {
+        $("head").load("template/head.html");
+        $("header").load("template/header.html");
+        $("footer").load("template/footer.html");
+    });
+    $(document).ready(function () {
+        $(".flyer-slider").slick({
+            dots: false,
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 1000,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    })
+</script>
+</html>
