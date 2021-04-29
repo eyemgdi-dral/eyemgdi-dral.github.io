@@ -84,6 +84,7 @@ footer p {
 
 footer p span {
     margin-right: 20px;
+    font-size: 14px;
 }
 
 @media (max-width: 768px) {
@@ -106,6 +107,7 @@ footer p span {
 
 .nav .nav-item a{
     padding: 0 22px;
+    font-size: 17px;
 }
 
 .container {
@@ -1070,7 +1072,7 @@ input[type=file] {
 }
 
 .banner-sub-con .banner-sub h1 {
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: 15px;
 }
 
@@ -1081,11 +1083,12 @@ input[type=file] {
 }
 
 .banner-sub-con .banner-sub button {
-    padding: 15px;
-    font-size: 14px;
-    line-height: 14px!important;
+    padding: 11px;
+    font-size: 13px;
+    line-height: 13px!important;
     height:auto!important;
     border-radius: 4px;
+    color:#000;
 }
 
 .banner-sub-con .banner-sub:first-child {
@@ -1110,9 +1113,12 @@ input[type=file] {
     border-right: none;
 }
 
+.features .feature .feature-title{
+    font-size: 18px;
+}
+
 .feature .feature-img {
-    margin: auto;
-    margin-bottom: 30px;
+    margin: auto auto 30px;
     width: 70px;
     height: 70px;
 }
@@ -1133,8 +1139,7 @@ input[type=file] {
 }
 
 .comms h1.highlight {
-    font-size: 26px;
-    height: 44px;
+    font-size: 30px;
     margin-bottom: 0px;
     font-weight: bold;
     color: #0367c8;
