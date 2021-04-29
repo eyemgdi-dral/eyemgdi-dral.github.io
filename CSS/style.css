@@ -1326,7 +1326,7 @@ input[type=file] {
 .menu-quick{
     position:absolute;
     top:230px;
-    left: calc(100% + 0px);
+    left: calc(100% + 80px);
     width: 125px;
     text-align: center;
 }
@@ -1336,6 +1336,7 @@ input[type=file] {
     padding:12px 0;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+    font-size: 14px;
 }
 .menu-quick .menu-quick-body{
     padding:0 15px;
@@ -1346,9 +1347,11 @@ input[type=file] {
 }
 .menu-quick .menu-quick-body li{
     padding:12px 0;
-    font-size: 14px;
-    font-weight: 100;
     border-top: 1px solid #ccc;
+}
+.menu-quick .menu-quick-body li a{
+    font-size: 13px;
+    font-weight: 300;/*uul ni 100 ghdee tasarch haragdaad bna*/
 }
 .menu-quick .menu-quick-bottom{
     background:url("../IMG/contact.png") no-repeat center 12px #505050;
@@ -1444,6 +1447,9 @@ input[type=file] {
 
 button {
     white-space: nowrap;
+}
+
+.hvr-1{
     position:relative;
     overflow: hidden;
 }
@@ -1461,7 +1467,7 @@ button {
 /*    background: red;*/
 /*}*/
 
-button:hover:before{
+.hvr-1:hover:before{
     content:"";
     display: block;
     position:absolute;
@@ -1475,11 +1481,11 @@ button:hover:before{
     transition:.3s;
     margin-bottom: 2px;
 }
-button:active:before{
+.hvr-1:active:before{
     display: none;
 }
 
-button:after {
+.hvr-1:after {
     content: "";
     /*background:linear-gradient(to right, transparent 0%, rgba(0,0,0,.5) 50%, transparent 100%);*/
     background:rgba(0,0,0,.1);
@@ -1495,7 +1501,7 @@ button:after {
     transition: all 0.8s
 }
 
-button:active:after {
+.hvr-1:active:after {
     opacity: 1;
     width: 0;
     left:50%;
