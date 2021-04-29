@@ -129,7 +129,7 @@ footer p span {
     line-height: 150px;
     text-align: center;
     color: white;
-    /*font-weight:bold;*/
+    font-weight:bold;
     font-size: 38px;
 }
 
@@ -534,20 +534,25 @@ footer p span {
     padding: 15px;
 }
 
-.box.type1 {
+.box.type1{
     background: #f5f5f5;
     border: 1px solid #dbdbdb;
+    padding:30px;
 }
 
+.box.type1 ul li{
+    font-size: 15px;
+    font-weight: 100;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+.box.type1 ul li:last-child{
+    margin-bottom: 0;
+}
 .box.type2 {
     background: #fa9319;
     border: 1px solid #fa9319;
     color: #fff;
-}
-
-.box.type1 ul li {
-    line-height: 25px;
-    padding-left: 15px;
 }
 
 ul.dotted li::before {
@@ -620,7 +625,7 @@ ul.dotted.square li::before {
     margin-top: 45px;
     border-top: #cccccc;
     border-bottom: #cccccc;
-    height: 450px;
+    height: 470px;
 }
 
 .phone.kakao .text-con {
@@ -668,7 +673,9 @@ ul.dotted.square li::before {
     border: none;
     resize: none;
     background: #f3f3f3;
-    padding: 30px;
+    padding: 20px;
+    line-height: 20px;
+    font-size: 15px;
     /*margin-top:50px;*/
 }
 
@@ -706,6 +713,7 @@ ul.dotted.square li::before {
     height: 45px;
     line-height: 45px;
     color: #fff;
+    font-size: 14px;
 }
 
 .btn-1-2 {
@@ -730,10 +738,11 @@ ul.dotted.square li::before {
 
 .phone-btn-con .btn-phone {
     background: transparent;
-    height: 80px;
-    line-height: 80px;
-    font-size: 20px;
+    height: 65px;
+    line-height: 65px;
+    font-size: 18px;
     color: #000;
+    font-weight: 400;
 }
 
 .phone-btn-con .btn-phone:last-child {
@@ -748,7 +757,7 @@ ul.dotted.square li::before {
     width: 1px;
     position: absolute;
     left: -2px;
-    top: 25px;
+    top: 17px;
 }
 
 .phone .size-con {
@@ -781,6 +790,7 @@ ul.dotted.square li::before {
     border-right: 1px solid #fff;
     padding: 0 25px;
     width: 25%;
+    font-size: 14px;
 }
 
 .list.type1 li:last-child {
@@ -1326,7 +1336,7 @@ input[type=file] {
 .menu-quick{
     position:absolute;
     top:230px;
-    left: calc(100% + 80px);
+    left: calc(100% + 30px);
     width: 125px;
     text-align: center;
 }
