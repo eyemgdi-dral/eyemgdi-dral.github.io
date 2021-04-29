@@ -45,9 +45,10 @@ table {
 }
 .nav-sub .nav-item a{
     color: #777;
+    font-size: 17px;
 }
 
-.nav-sub .nav-item.on {
+.nav-sub .nav-item.on a{
     color: #0367c8;
     /*border-bottom:1px solid #0367c8;*/
 }
@@ -312,7 +313,7 @@ footer p span {
 
 .hvr {
     position: absolute;
-    bottom: -2.4px;
+    bottom: -1.4px;
     height: 3px;
     width: 100px;
     background: #0367c8;
@@ -660,11 +661,14 @@ ul.dotted.square li::before {
     margin-bottom: -20px;
     padding: 0 0 30px 50px;
     margin-top:20px;
+    font-weight: 400;
 }
 
 .phone.kakao .text-con p{
     padding:15px;
     background: #98b8d3;
+    font-size: 14px;
+    font-weight: 100;
 }
 
 .phone .text-con textarea {
@@ -686,6 +690,7 @@ ul.dotted.square li::before {
     background:url("../IMG/kakao-msg.png") no-repeat 90px center #fae100;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    font-weight: 400;
 
 }
 
@@ -700,8 +705,7 @@ ul.dotted.square li::before {
     margin-top:0;
     line-height: 20px;
     color:#000;
-    font-size: 15px;
-
+    font-size: 14px;
 }
 
 .phone-btn-con {
@@ -712,8 +716,18 @@ ul.dotted.square li::before {
     display: inline-block;
     height: 45px;
     line-height: 45px;
+    padding:0;
+    text-align: center;
     color: #fff;
     font-size: 14px;
+}
+
+.phone.kakao .phone-btn-con .btn-1-3{
+    font-size: 13px;
+    border-right:#ccc 1px solid;
+}
+.phone.kakao .phone-btn-con .btn-1-3:last-child{
+    border:none;
 }
 
 .btn-1-2 {
@@ -770,6 +784,11 @@ ul.dotted.square li::before {
 .phone.kakao .size-con {
     bottom: -5px;
     right: 50px;
+    font-weight: 100;
+}
+
+.phone.kakao button {
+    font-size: 14px;
 }
 
 .list {
