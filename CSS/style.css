@@ -46,6 +46,7 @@ table {
 .nav-sub .nav-item a{
     color: #777;
     font-size: 17px;
+    font-weight: 400;/*doesnt seem right so i put it to 400, but default is 100*/
 }
 
 .nav-sub .nav-item.on a{
@@ -135,7 +136,8 @@ footer p span {
 }
 
 .sub-title {
-    font-size: 36px;
+    font-size: 38px;
+    font-weight: bold;
     line-height: 115px;
     text-align: center;
 }
@@ -280,11 +282,6 @@ footer p span {
 .btn-sm {
     line-height: 30px !important;
     height: 30px !important;
-}
-
-.btn-big {
-    line-height: 50px !important;
-    height: 50px !important;
 }
 
 .btn-search {
@@ -1068,7 +1065,7 @@ input[type=file] {
     background: #ffffff url(../IMG/calendar.gif) no-repeat center right 4px;
     padding-right: 40px;
     cursor: pointer;
-    width: 120px;
+    width: 130px;
 }
 
 .flyer-img img {

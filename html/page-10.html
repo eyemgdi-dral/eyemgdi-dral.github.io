@@ -28,6 +28,9 @@
 <h1 class="sub-title">친구톡 보내기</h1>
 
 <div class="container">
+    <link rel="stylesheet" type="text/css" href="../PLUGIN/datepicker/datepicker.min.css">
+    <script src="../PLUGIN/datepicker/datepicker.min.js"></script>
+    <script src="../PLUGIN/datepicker/datepicker.ko.js"></script>
 
     <div class="box type1">
         <ul class="dotted dotted-yellow square">
@@ -100,7 +103,7 @@
                 <button class="btn_view btn-sm">삭제</button>
                 <button class="btn_view btn-sm">전체삭제</button>
             </div>
-            <div class="col-1-4">
+            <div class="col-1-4 text-right">
                 <span class="lh_30">
                     총 수신자 <b class="text-red">0</b>명
                 </span>
@@ -115,10 +118,8 @@
         <div class="row">
             <div class="col-3-4 fs-0">
                 <label class="input-append sender">받는사람목록</label>
-                <select class="type_l" name="" id="">
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
+                <select class="type_l">
+                    <option value="">011-9999-9989 (대표)</option>
                 </select>
             </div>
             <div class="col-1-4">
@@ -157,14 +158,14 @@
         </div>
         <div class="row">
             <div class="col-1-4"></div>
-            <div class="col-3-4">
-                <input type="text" class="date">
+            <div class="col-3-4 lh_30">
+                <input type="text" class="date-picker">
                 <select>
-                    <option value="">asd</option>
-                </select>
+                    <option value="">14</option>
+                </select> 시
                 <select>
-                    <option value="">asd</option>
-                </select>
+                    <option value="">55</option>
+                </select> 분
             </div>
         </div>
 
@@ -193,8 +194,8 @@
     <hr class="divider">
 
     <div class="btn_box">
-        <button type="submit" class="bri_btn btn_30 btn_big">친구톡 발송하기</button>
-        <button type="submit" class="bri_btn btn_30_ol btn_big">전체초기화</button>
+        <button type="submit" class="bri_btn btn_30 btn_big hvr-1">친구톡 발송하기</button>
+        <button type="submit" class="bri_btn btn_30_ol btn_big hvr-1">전체초기화</button>
     </div>
 
     <h1 class="section-title">템플릿</h1>
@@ -336,7 +337,12 @@
 
 <hr class="hr_20">
 </div>
-
+<script>
+    $('.date-picker').datepicker({
+        language: 'ko',
+        autoClose: true
+    });
+</script>
 <footer></footer>
 
 </body>
