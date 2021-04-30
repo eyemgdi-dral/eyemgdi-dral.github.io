@@ -35,7 +35,7 @@
 
 	.banner-main{height: 300px;background: url("../IMG/banners/banner-main-2.gif") no-repeat center center;background-size: auto 100%;padding-top: calc(300px / 2 - 60px);}
 
-	.banner-main h1{color: white;font-family: "BM Hanna", sans-serif;font-size: 36px;line-height: 42px;font-weight: 400;}
+	.banner-main h1{font-size: 36px;line-height: 42px;}
 
 	.banner-sub-con .banner-sub{padding: 30px;}
 
@@ -43,9 +43,7 @@
 
 	.dx-l{display: none;}
 
-	.nav-sub .nav-item {
-		padding: 0 20px;
-	}
+	.nav-sub .nav-item {padding: 0 20px;}
 }
 
 @media (max-width: 768px){
@@ -53,7 +51,7 @@
 
 	.banner-main{height: 200px;background: url("../IMG/banners/banner-main-2.gif") no-repeat center center;background-size: auto 100%;padding-top: calc(200px / 2 - 45px);}
 
-	.banner-main h1{color: white;font-family: "BM Hanna", sans-serif;font-size: 24px;line-height: 30px;font-weight: 400;}
+	.banner-main h1{font-size: 24px;line-height: 30px;}
 
 	.banner-sub-con .banner-sub{display: block;width: 100%;margin-bottom: 20px;}
 

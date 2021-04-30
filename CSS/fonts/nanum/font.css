@@ -1,0 +1,8 @@
+@font-face {
+	font-family:'Y SpotlightOTF';
+	font-weight: 100;
+	src: url('Y-SpotlightOTF.woff') format('woff'),
+	url('Y-SpotlightOTF.otf'),
+	url('Y SpotlightOTF.ttf') format('truetype'),
+	url('Y SpotlightOTF.eot');
+}

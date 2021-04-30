@@ -7,7 +7,7 @@ yellow: #fa9319
 
 body {
     font-family: 'Noto Sans KR', dotum, sans-serif !important;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 table {
@@ -122,7 +122,7 @@ footer p span {
 }
 
 .container * {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .page-title {
@@ -324,7 +324,7 @@ footer p span {
 }
 
 .row * {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 *[class^='col'], *[class*=' col'] {
@@ -1112,15 +1112,15 @@ input[type=file] {
     height: 485px;
     background: url("../IMG/banners/banner-main-2.gif") no-repeat center center;
     background-size: auto 100%;
-    padding-top: calc(485px / 2 - 75px);
+    padding-top: calc(485px / 2 - 90px);
 }
 
 .banner-main h1 {
     color: white;
-    font-family: "BM Hanna", sans-serif;
-    font-size: 36px;
-    line-height: 42px;
-    font-weight: 400;
+    font-family: "Y SpotlightOTF", sans-serif;
+    font-size: 46px;
+    line-height: 60px;
+    font-weight: 100;
 }
 
 .banner-sub-con {
