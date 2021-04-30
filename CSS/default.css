@@ -28,7 +28,7 @@ select:focus::-ms-value {background-color: #ffffff;color: #252525;}
 p {margin:0;padding:0;word-break:break-all}
 a {text-decoration:none;vertical-align: middle;}
 input[type=text],input[type=password], input[type=number], textarea {outline: none;}
-input[type=text],input[type=password], input[type=number], select, button{vertical-align: top;border: 1px solid #b7b7b7;padding: 0 14px;line-height: 35px;height: 35px;color: #858585;font-size: 14px;font-weight: 100;}
+input[type=text],input[type=password], input[type=number], select, button{vertical-align: top;border: 1px solid #b7b7b7;padding: 0 14px;line-height: 35px;height: 35px;color: #000;font-size: 14px;font-weight: 100;}
 input[type=text].type1,input[type=password].type1,select.type1{color: #555555;line-height: 30px;height: 32px;padding: 0 10px;}
 textarea{color: #858585;font-size: 14px;border: 1px solid #b7b7b7;padding: 0 14px;resize: none;line-height: 43px;}
 @media (max-width: 768px) {
@@ -614,7 +614,7 @@ input[type="radio"] + label:after{
 .info_box5 button,
 .info_box5 input[type=text],
 .info_box5 input[type=password],
-.info_box5 select{line-height: 35px;height: 35px;font-size: 15px;color: #555555;}
+.info_box5 select{line-height: 35px;height: 35px;font-size: 13px;color: #555555;}
 .info_box5 textarea{height: 120px;margin: 5px 0;resize: none;padding: 14px;font-size: 15px;line-height: 22px;}
 
 .info_box6{width: 100%;margin-bottom: 30px;}
@@ -684,6 +684,8 @@ input[type="radio"] + label:after{
 .btn_140{background-color: #ffffff;border:1px solid #aeaeae;}
 .btn_150{background-color: #ef791a;border:1px solid #ef791a;color: #ffffff !important;}
 .btn_160{background-color: #fae100;border:1px solid #fae100;color:#000!important;}
+.btn_170{background-color: #f8fcff;border:1px solid #0367c8;color:#000!important;}
+.btn_180{background-color: #666;border:1px solid #666;color:#fff!important;}
 
 
 
@@ -717,10 +719,10 @@ input[type="radio"] + label:after{
 .s_silver {color: #686868!important;}
 .s_violet {color: #dde9fe!important;}
 
-.btn_view{color: #707070;background-color:#fff;border:1px solid #707070;padding: 4px 6px;appearance: auto;height:auto;vertical-align: middle; font-size: 13.3333px!important}
-.btn_edit{color: #ed1c24!important;background-color:#fff;border:1px solid #ed1c24;padding: 4px 6px;appearance: auto;height:auto;vertical-align: middle; font-size: 13.3333px!important}
+.btn_view{color: #707070;background-color:#fff;border:1px solid #707070;padding: 4px 6px;appearance: auto;height:auto;vertical-align:baseline; font-size: 13.3333px!important; line-height:initial;}
+.btn_edit{color: #ed1c24!important;background-color:#fff;border:1px solid #ed1c24;padding: 4px 6px;appearance: auto;height:auto;vertical-align:baseline; font-size: 13.3333px!important; line-height:initial;}
 .btn_send,
-.btn_select{background-color: #999999;border:1px solid #999999;color: #ffffff !important;padding: 4px 6px;appearance: auto; height:auto;vertical-align: middle; font-size: 13.3333px!important}
+.btn_select{background-color: #999999;border:1px solid #999999;color: #ffffff !important;padding: 4px 6px;appearance: auto; height:auto;vertical-align:baseline; font-size: 13.3333px!important; line-height:initial;}
 .btn_file{background-color: #f5f5f5;font-size: 14px;appearance: auto;cursor:pointer}
 .btn_crop{background-color: #868688;color: #ffffff !important;font-size: 14px;padding: 0px 20px;appearance: auto;vertical-align: middle;cursor:pointer}
 .msg-manager .btn_view, .msg-manager .btn_edit, .msg-manager .btn_send{padding:0 6px}

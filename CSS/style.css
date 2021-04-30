@@ -110,6 +110,7 @@ footer p span {
 .nav .nav-item a{
     padding: 0 22px;
     font-size: 17px;
+    font-weight: 400;
 }
 
 .container {
@@ -395,6 +396,7 @@ footer p span {
 .card select {
     line-height: 35px;
     height: 35px;
+    font-size: 14px;
 }
 
 .card-top {
@@ -409,7 +411,13 @@ footer p span {
 .card-img {
     position: relative;
     overflow: hidden;
-    background: url("../IMG/noimg.gif") center center no-repeat;
+    background: url("../IMG/noimg2.png") center center no-repeat;
+    /*background: url("../IMG/noimg.gif") center center no-repeat;*/
+}
+
+.manage .card-img{
+    background: url("../IMG/noimg2.png") center calc(50% - 35px) no-repeat;
+    margin-bottom: 5px;
 }
 
 .card-img img {
@@ -417,11 +425,29 @@ footer p span {
     width: auto;
     height: 100%;
 }
+.manage .card-img img {
+    position: absolute;
+    width: auto;
+    height: calc(100% - 35px);
+}
+
+.card-img p {
+    position: absolute;
+    width: 100%;
+    bottom:45px;
+    text-align: center;
+}
 
 .card-img:after {
     content: "";
     display: block;
     padding-bottom: 100%;
+}
+.manage  .card-img:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    margin-bottom: 35px;
 }
 
 .card-horizontal .card-img,
@@ -432,6 +458,16 @@ footer p span {
 
 .card-horizontal .card-img {
     padding-right: 8px;
+}
+
+.manage .card-img button{
+    position:absolute;
+    bottom:0;
+    width: calc(100% - 8px);
+    margin-bottom: 0!important;
+}
+.manage.card-vertical .card-img button{
+    width: 100%;
 }
 
 .card-horizontal .card-detail {
@@ -447,24 +483,22 @@ footer p span {
     text-align: center;
 }
 
-.card-vertical .manage + .card-detail {
+.card-vertical.manage .card-detail {
     padding-top: 0;
 }
 
-.card .manage button {
+.card.manage button {
     margin-bottom: 5px;
     cursor: pointer;
 }
 
-.card .manage .type_m:nth-child(2) {
+.card.manage .type_m:nth-child(1) {
     width: calc(50% - 3px);
     margin-right: 5px;
 }
-
-.card .manage .type_m:nth-child(3) {
+.card.manage .type_m:nth-child(2) {
     width: calc(50% - 2px);
 }
-
 
 .card-detail {
     vertical-align: top;
@@ -475,17 +509,17 @@ footer p span {
     margin-bottom: 5px;
 }
 
-.card-detail button {
-    padding: 0 14px;
-    line-height: 35px;
-    height: 35px;
-    font-size: 14px;
-    width: 100%;
-    border: 1px solid #0367c8;
-    background: #f8fcff;
-    color: #000;
-    cursor: pointer;
-}
+/*.card-detail button {*/
+/*    padding: 0 14px;*/
+/*    line-height: 35px;*/
+/*    height: 35px;*/
+/*    font-size: 14px;*/
+/*    width: 100%;*/
+/*    border: 1px solid #0367c8;*/
+/*    background: #f8fcff;*/
+/*    color: #000;*/
+/*    cursor: pointer;*/
+/*}*/
 
 .card-detail button.btn_silver {
     border: 1px solid #707070;
