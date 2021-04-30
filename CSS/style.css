@@ -592,11 +592,13 @@ ul.dotted li::before {
     color: black;
     font-weight: bold;
     display: inline-block;
-    width: 15px;
+    width: 3px;
+    height: 3px;
     position: relative;
     font-size: 5px;
     top: -4px;
     margin-left: -1rem;
+    margin-right:8px;
 }
 
 ul.dotted-yellow li::before {
