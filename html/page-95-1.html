@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+</head>
+
+<body>
+<header></header>
+
+<div class="container order_container">
+    <div class="order-basket_count">
+        <p class="f105">담으신 상품
+            <strong class="point_c">4</strong> 개 (
+            <strong class="point_c">8,500</strong> 원)
+        </p>
+        <div class="order-basket_btn">
+            <button type="button">주문하기</button>
+        </div>
+    </div>
+    <div class="order-searchbox_con">
+        <input type="text" placeholder="상품검색">
+        <div class="searchbox_btn">
+            <button type="button">검색</button>
+        </div>
+    </div>
+    <div class="order-amount_con">
+        <p class="order-amount_date">행사 기간 : 2021-03-01 ~ 2021-03-31</p>
+        <p class="order-amount_total">배달 시 최소 주문금액 : <span>50,000원</span></p>
+    </div>
+    <div class="order-feature_con">
+        <table class="info_box5 list_primary">
+            <colgroup>
+                <col>
+                <col width="22%">
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th class="show order-feature_title" colspan="2">채소코너</th>
+                </tr>
+                <tr>
+                    <td class="show td_left">
+                        상추 1봉
+                        <span class="order-feature_amount">2,000원</span>
+                    </td>
+                    <td class="show" rowspan="2">
+                        <button>삭제</button>
+                        <button>담기</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="show td_left">
+                        고랭지 무우 1개
+                        <span class="order-feature_amount">2,000원</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="info_box5 list_yellow">
+            <colgroup>
+                <col>
+                <col width="22%">
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th class="show order-feature_title" colspan="2">육륰코너</th>
+                </tr>
+                <tr>
+                    <td class="show td_left">
+                        삼겹살 1근
+                        <span class="order-feature_amount">2,000원</span>
+                    </td>
+                    <td class="show" rowspan="2">
+                        <button>삭제</button>
+                        <button>담기</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="show td_left">
+                        육회거리 1근
+                        <span class="order-feature_amount">2,000원</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="info_box5 list_violet">
+            <div class="order-feature_title">과일코너</div>
+            <div class="row">
+                <div class="col-1-2">
+                    <div class="card card-vertical">
+                        <div class="card-img"></div>
+                        <div class="card-detail">
+                            <p>대파</p>
+                            <p>1단</p>
+                            <p>2,000원</p>
+                            <p>1,000원</p>
+                            <button type="button" class="btn_silver">담기</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-2">
+                    <div class="card card-vertical">
+                        <div class="card-img"></div>
+                        <div class="card-detail">
+                            <p>하우스 수박 1통</p>
+                            <p>정상가 : 10,000원</p>
+                            <p>판매가 : <span>8,000</span>원</p>
+                            <button type="button" class="btn_silver">삭제</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-2">
+                    <div class="card card-vertical">
+                        <div class="card-img"></div>
+                        <div class="card-detail">
+                            <p>대파</p>
+                            <p>1단</p>
+                            <p>2,000원</p>
+                            <p>1,000원</p>
+                            <button type="button" class="btn_silver">담기</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-2">
+                    <div class="card card-vertical">
+                        <div class="card-img"></div>
+                        <div class="card-detail">
+                            <p>하우스 수박 1통</p>
+                            <p>정상가 : 10,000원</p>
+                            <p>판매가 : <span>8,000</span>원</p>
+                            <button type="button" class="btn_silver">삭제</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer></footer>
+</body>
+
+<!--<script src="/js/common.js"></script>-->
+<script>
+    $(function () {
+        $("head").load("template/head.html");
+        $("header").load("template/header.html");
+        $("footer").load("template/footer.html");
+    });
+</script>
+</html>

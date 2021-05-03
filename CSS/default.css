@@ -840,6 +840,22 @@ input[type="radio"] + label:after{
 }
 /*login end*/
 
+.bcred, .bcred>th, .bcred>td {background-color: #f9ebeb}
+.bcred>th {border-right: 0}
+.bcred>td {border-left: 0; text-align: right}
+.order-basket_subtitle {padding: 15px 0;font-size: 16px;}
+.order-basket_count {text-align: right}
+.order-amount_con {background: #f5f5f5;padding: 15px 20px;line-height: 20px;}
+
+.responsive_box{width: 100%;margin-bottom: 30px;}
+.responsive_box .top{border-top: 2px solid #363636;}
+.responsive_box th,.responsive_box td{border: 1px solid #d7d8de;}
+.responsive_box th{padding: 0 15px 0 30px;text-align: left;color: #464646;background-color: #f7f7f7;font-size: 14px;}
+.responsive_box td{padding: 10px; overflow: hidden}
+.responsive_box button,
+.responsive_box input[type=text],
+.responsive_box input[type=password],
+.responsive_box select{line-height: 35px;height: 35px;font-size: 15px;color: #555555; width: 100%;}
 /*shine*/
 
 .square_blue:before {content: ""; width: 4px; height: 4px; background-color: #0367c8; position: absolute; margin-top: 13px; margin-left: -10px;}

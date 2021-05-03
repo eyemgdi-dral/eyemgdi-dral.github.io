@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+</head>
+
+<body>
+<header></header>
+
+<div class="container order_container">
+    <div class="order-basket_con">
+        <div class="order-basket_subtitle">고객및결제정보</div>
+        <table class="responsive_box">
+            <tr>
+                <th>상태</th>
+                <td>
+                    주문완료
+                    <p class="text-red">※ 상태 값이 ‘준비중’ 으로 변경된 후에는 취소가  불가능 합니다.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>주문일시</th>
+                <td>2021-03-01 15:20:45 </td>
+            </tr>
+            <tr>
+                <th>결제금액</th>
+                <td>100,000원</td>
+            </tr>
+            <tr>
+                <th>결제방법</th>
+                <td>카드결제 (배달)</td>
+            </tr>
+            <tr>
+                <th>전단제목</th>
+                <td>3월 이벤트 세일!</td>
+            </tr>
+            <tr>
+                <th>주문자</th>
+                <td>홍길동</td>
+            </tr>
+            <tr>
+                <th>전화번호</th>
+                <td>010-2222-3333</td>
+            </tr>
+            <tr>
+                <th>배달주소</th>
+                <td>서울시 금천구 가산동 1번지 1층 101호</td>
+            </tr>
+            <tr>
+                <th>추가주문</th>
+                <td>
+                    서울우유 1000미리 <br>
+                    상추 한 봉지 <br>
+                    추가해서 보내주세요.
+                </td>
+            </tr>
+            <tr>
+                <th>요청사항</th>
+                <td>그냥 문 앞에 놔주시고, 벨만 눌러주세요. </td>
+            </tr>
+        </table>
+
+        <div class="order-basket_subtitle">구매내역</div>
+        <table class="info_box5">
+            <colgroup>
+                <col>
+                <col width="36%">
+                <col width="15%">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th class="show">상품명</th>
+                    <th class="show">단가/수량</th>
+                    <th class="show">소계</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="show td_left" rowspan="2">상추 1봉</td>
+                    <td class="show">2,000원</td>
+                    <td class="show" rowspan="2">2,000원</td>
+                </tr>
+                <tr>
+                    <td class="show">1개</td>
+                </tr>
+                <tr>
+                    <td class="show td_left" rowspan="2">삼겹살 1근</td>
+                    <td class="show">2,000원</td>
+                    <td class="show" rowspan="2">2,000원</td>
+                </tr>
+                <tr>
+                    <td class="show">1개</td>
+                </tr>
+            </tbody>
+            <tfooter>
+                <tr class="bcred">
+                    <th>총 금액</th>
+                    <td class="td_right" colspan="2">6,000원</td>
+                </tr>
+            </tfooter>
+        </table>
+    </div>
+
+    <div class="btn_box">
+        <a href="javascript:void(0)" onclick="" class="bri_btn btn_20 btn_big">확인</a>
+        <a href="page-32.html" class="bri_btn btn_20_ol btn_big">취소</a>
+    </div>
+</div>
+
+
+<footer></footer>
+</body>
+
+<!--<script src="/js/common.js"></script>-->
+<script>
+    $(function () {
+        $("head").load("template/head.html");
+        $("header").load("template/header.html");
+        $("footer").load("template/footer.html");
+    });
+</script>
+</html>
