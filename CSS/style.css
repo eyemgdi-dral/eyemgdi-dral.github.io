@@ -204,6 +204,10 @@ footer p span {
     margin-top: 5px;
 }
 
+.mt-15 {
+    margin-top: 15px;
+}
+
 .mb-10 {
     margin-bottom: 10px;
 }
@@ -248,8 +252,20 @@ footer p span {
     padding-bottom: 15px;
 }
 
+.pt-10 {
+    padding-top: 10px;
+}
+
 .pt-15 {
     padding-top: 15px;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
 }
 
 .d-inline-block {
