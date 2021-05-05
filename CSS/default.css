@@ -28,7 +28,7 @@ select:focus::-ms-value {background-color: #ffffff;color: #252525;}
 p {margin:0;padding:0;word-break:break-all}
 a {text-decoration:none;vertical-align: middle;}
 input[type=text],input[type=password], input[type=number], textarea {outline: none;}
-input[type=text],input[type=password], input[type=number], select, button{vertical-align: top;border: 1px solid #b7b7b7;padding: 0 14px;line-height: 35px;height: 35px;color: #000;font-size: 14px;font-weight: 100;}
+input[type=text],input[type=password], input[type=number], select, button{vertical-align: top;border: 1px solid #b7b7b7;padding: 0 14px;line-height: 35px;height: 35px;color: #000;font-size: 14px;font-weight: 100; letter-spacing:-1px;}
 input[type=text].type1,input[type=password].type1,select.type1{color: #555555;line-height: 30px;height: 32px;padding: 0 10px;}
 textarea{color: #858585;font-size: 14px;border: 1px solid #b7b7b7;padding: 0 14px;resize: none;line-height: 43px;}
 @media (max-width: 768px) {
@@ -140,7 +140,7 @@ input[type="radio"] + label:after{
 .font_number{font-family: 'NanumSquareRound', dotum, sans-serif;font-weight: 800;text-shadow: 0.5px 0px 1px;}
 
 .divider{ margin:25px 0; border-bottom:1px solid #f1f1f1;}
-.divider.sm{ margin:15px 0; border-bottom:1px solid #f1f1f1;}
+.divider.sm{ margin:25px 0; border-bottom:1px solid #ccc;}
 
 .hr_10{height: 10px;}
 .hr_20{height: 20px;}
@@ -616,7 +616,7 @@ input[type="radio"] + label:after{
 .info_box5 input[type=text],
 .info_box5 input[type=password],
 .info_box5 select{line-height: 35px;height: 35px;font-size: 13px;color: #555555;}
-.info_box5 textarea{height: 120px;margin: 5px 0;resize: none;padding: 14px;font-size: 15px;line-height: 22px;}
+.info_box5 textarea{height: 120px;margin: 5px 0;resize: none;padding: 14px; font-size: 14px;line-height: 22px; letter-spacing:-0.7px;}
 
 .info_box6{width: 100%;margin-bottom: 30px;}
 .info_box6 .top{border-top: 2px solid #363636;}
@@ -626,7 +626,7 @@ input[type="radio"] + label:after{
 .info_box6 button,
 .info_box6 input[type=text],
 .info_box6 input[type=password],
-.info_box6 select{line-height: 35px;height: 35px;font-size: 15px;color: #555555;
+.info_box6 select{line-height: 35px;height: 35px;font-size: 14px;color: #555555; letter-spacing:-1px;
     width: 100%;}
 /*.info_box6 textarea{height: 120px;margin: 5px 0;resize: none;padding: 14px;font-size: 15px;line-height: 22px;}*/
 
@@ -720,8 +720,8 @@ input[type="radio"] + label:after{
 .s_silver {color: #686868!important;}
 .s_violet {color: #dde9fe!important;}
 
-.btn_view{color: #707070;background-color:#fff;border:1px solid #707070;padding: 4px 6px;appearance: auto;height:auto;vertical-align:baseline; font-size: 13.3333px!important; line-height:initial;}
-.btn_edit{color: #ed1c24!important;background-color:#fff;border:1px solid #ed1c24;padding: 4px 6px;appearance: auto;height:auto;vertical-align:baseline; font-size: 13.3333px!important; line-height:initial;}
+.btn_view{color: #707070;background-color:#fff;border:1px solid #707070;padding: 4px 6px;appearance: auto;height:auto;vertical-align:baseline; font-size: 12px!important; line-height:initial;}
+.btn_edit{color: #ed1c24!important;background-color:#fff;border:1px solid #ed1c24;padding: 4px 6px;appearance: auto;height:auto;vertical-align:baseline; font-size: 12px!important; line-height:initial;}
 .btn_send,
 .btn_select{background-color: #999999;border:1px solid #999999;color: #ffffff !important;padding: 4px 6px;appearance: auto; height:auto;vertical-align:baseline; font-size: 13.3333px!important; line-height:initial;}
 .btn_file{background-color: #f5f5f5;font-size: 14px;appearance: auto;cursor:pointer}
@@ -763,7 +763,7 @@ input[type="radio"] + label:after{
 .popup_wrap .popup_layer .popup_window .pp_content input[type=password],
 .popup_wrap .popup_layer .popup_window .pp_content input[type=number],
 .popup_wrap .popup_layer .popup_window .pp_content select,
-.popup_wrap .popup_layer .popup_window .pp_content button {line-height: 35px!important;height: 35px!important;}
+.popup_wrap .popup_layer .popup_window .pp_content button {line-height: 35px!important;height: 35px!important; letter-spacing:-1px;}
 .popup_wrap .popup_layer .popup_window .pp_content table{width: 100%;}
 .popup_wrap .popup_layer .popup_window .pp_content table button>span{font-size: 14px;}
 .popup_wrap .popup_layer .popup_window .pp_content th{min-width: 10px; padding: 15px 0;color: #252525;background-color: #f7f7f7;}
@@ -794,7 +794,7 @@ input[type="radio"] + label:after{
 .popup_wrap .popup_layer .popup_window .pp_content .description_con .description_title:before {content: "\2022";margin-right: 10px;color: #0367c8;}
 .popup_wrap .popup_layer .popup_window .pp_content .description_con .description_text textarea {width: 100%; height:210px; resize: none; scroll: auto;}
 .popup_wrap .popup_layer .popup_window .pp_content .tab_wrap {margin-bottom: 0;}
-.popup_wrap .popup_layer .popup_window .pp_content .tab_wrap .tabs a {font-size: 14px; line-height: 40px;}
+.popup_wrap .popup_layer .popup_window .pp_content .tab_wrap .tabs a {font-size: 15px; line-height: 47px;}
 /*popup end*/
 
 /*login*/
@@ -892,7 +892,7 @@ canvas {max-width: 100%; max-height: 100%;}
     letter-spacing: -1px; font-weight: 300;
 }
 .tab_wrap.sm .tabs a{
-    width: 120px; line-height: 40px;
+    width: 130px; line-height: 46px; font-size:15px; font-weight:200;
 }
 .tab_wrap .tabs a.on{border: 1px solid #0367c8;background: #ffffff;color: #2974cc;border-bottom: 0;z-index: 3;font-weight: 400; font-size: 15px}
 #menu-select {display: none; width: 100%;}

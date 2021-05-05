@@ -23,13 +23,13 @@ table {
 .nav-top {
     display: block;
     text-align: right;
-    line-height: 30px;
+    margin-top:15px;
 }
 
 .nav-sub {
     /*padding: 20px 0;*/
     text-align: center;
-    line-height: 55px;
+    line-height: 60px;
 }
 
 .nav-sub-wrap {
@@ -56,6 +56,7 @@ table {
 
 .nav-bottom {
     display: block;
+	margin-top:70px;
     text-align: center;
     line-height: 55px;
     border-top: 1px solid #d5d5d5;
@@ -68,6 +69,7 @@ table {
 
 .nav-bottom .nav-item {
     display: inline-block;
+	
 }
 
 .nav-bottom .nav-item:first-child a {
@@ -76,12 +78,16 @@ table {
 
 .nav-bottom a {
     padding: 0 22px;
-    border-left: 1px solid #d5d5d5
+    border-left: 1px solid #d5d5d5;
+	font-size:16px; 
+	font-weight:normal;
 }
+
+footer {margin-bottom:40px;}
 
 footer p {
     font-weight: 100;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 footer p span {
@@ -98,8 +104,9 @@ footer p span {
 }
 
 .nav {
-    line-height: 70px;
+    line-height: 55px;
     text-align: right;
+	padding-bottom:10px;
 }
 
 .nav .nav-item {
@@ -108,13 +115,17 @@ footer p span {
 }
 
 .nav .nav-item a{
-    padding: 0 22px;
-    font-size: 17px;
-    font-weight: 400;
+    padding: 0 30px;
+    font-size: 18px;
+   font-weight: normal;
+}
+
+.nav .nav-item a:last-child {
+	padding-right:0;
 }
 
 .container {
-    max-width: 1240px;
+    max-width: 1140px;
     width: 100%;
     margin: 0 auto;
     padding: 0 20px;
@@ -283,6 +294,7 @@ footer p span {
 .btn-sm {
     line-height: 30px !important;
     height: 30px !important;
+	font-size:12px !important;
 }
 
 .btn-search {
@@ -336,7 +348,7 @@ footer p span {
 
 *[class^='col']:last-child, *[class*=' col']:last-child {
     margin-right: 0;
-    padding-right: 15px;
+    
 }
 
 .col-1-1 {
@@ -576,7 +588,7 @@ footer p span {
     font-size: 15px;
     font-weight: 100;
     padding-left: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 .box.type1 ul li:last-child{
     margin-bottom: 0;
@@ -643,10 +655,14 @@ ul.dotted.square li::before {
 }
 
 .input-append.receiver {
+	font-weight:bold;
+	font-size:16px;
     background: url("../IMG/receiver.gif") no-repeat left center;
 }
 
 .input-append.sender {
+	font-weight:bold;
+	font-size:16px;
     background: url("../IMG/sender.gif") no-repeat left center;
 }
 
@@ -707,12 +723,15 @@ ul.dotted.square li::before {
 .phone .text-con textarea {
     width: 100%;
     height: 100%;
-    border: none;
+    border-left: none;
+	border-right: none;
+	border-bottom: none;
     resize: none;
     background: #f3f3f3;
     padding: 20px;
     line-height: 20px;
     font-size: 15px;
+	letter-spacing:-1px;
     /*margin-top:50px;*/
 }
 
@@ -753,6 +772,7 @@ ul.dotted.square li::before {
     text-align: center;
     color: #fff;
     font-size: 14px;
+	letter-spacing:-1px;
 }
 
 .phone.kakao .phone-btn-con .btn-1-3{
@@ -789,7 +809,7 @@ ul.dotted.square li::before {
     line-height: 65px;
     font-size: 18px;
     color: #000;
-    font-weight: 400;
+    font-weight: normal;
 }
 
 .phone-btn-con .btn-phone:last-child {
@@ -838,11 +858,15 @@ ul.dotted.square li::before {
 
 .list.type1 li {
     text-align: center;
-    line-height: 25px;
-    border-right: 1px solid #fff;
+    line-height: 22px;
+    border-right:1px solid rgba(255,255,255,0.5);
     padding: 0 25px;
     width: 25%;
     font-size: 14px;
+}
+
+.list.type1 li b {
+	font-size:16px;
 }
 
 .list.type1 li:last-child {
@@ -1135,22 +1159,31 @@ input[type=file] {
 
 .banner-sub-con .banner-sub h1 {
     font-size: 28px;
+	font-weight:bold;
     margin-bottom: 15px;
 }
 
 .banner-sub-con .banner-sub p {
     margin-bottom: 35px;
     color: #555;
-    font-weight: 100;
+    font-weight: 300;
+	font-size:16px;
 }
 
 .banner-sub-con .banner-sub button {
-    padding: 11px;
+    padding: 11px 13px;;
     font-size: 13px;
     line-height: 13px!important;
     height:auto!important;
     border-radius: 4px;
     color:#000;
+	background-color:#fff;
+	border:none;
+	letter-spacing:-1px;
+}
+
+.banner-sub-con .banner-sub button span {
+	margin-left:7px;
 }
 
 .banner-sub-con .banner-sub:first-child {
@@ -1170,17 +1203,18 @@ input[type=file] {
     display: inline-block;
     width: 20%;
     text-align: center;
-    padding: 50px 0;
+    padding: 40px 0;
     border: 1px solid #ccc;
     border-right: none;
 }
 
 .features .feature .feature-title{
     font-size: 18px;
+	font-weight:normal;
 }
 
 .feature .feature-img {
-    margin: auto auto 30px;
+    margin: auto auto 20px;
     width: 70px;
     height: 70px;
 }
@@ -1200,18 +1234,28 @@ input[type=file] {
     font-weight: bold;
 }
 
+.comms.type2 h1 {
+    margin-bottom: 17px;
+}
+
 .comms h1.highlight {
     font-size: 30px;
-    margin-bottom: 0px;
+    margin-bottom: 12px;
     font-weight: bold;
     color: #0367c8;
 }
 
-.comms p,
-.comms td {
+.comms p{
     font-size: 15px;
     font-weight: 100;
-    line-height: 22px;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+.comms td {
+	font-size: 15px;
+    font-weight: 100;
+    line-height: 26px;
     white-space: nowrap;
 }
 
@@ -1241,9 +1285,7 @@ input[type=file] {
     color: white;
 }
 
-.comms.type2 h1 {
-    margin-bottom: 20px;
-}
+
 .flyer-slider{
     padding:0 40px;
 }

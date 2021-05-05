@@ -25,7 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    letter-spacing:-0.5px;
+    letter-spacing:-0.6px;
     font-size:14px;
 }
 ol, ul {
@@ -44,7 +44,7 @@ table {
     border-spacing: 0;
 }
 button{
-    border:none;
+    border:none; 
 }
 
 button, select, input{
