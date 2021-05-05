@@ -25,6 +25,8 @@
 
 	.brand{top: 5px;width: calc(100% - 200px);text-align: center;left: 100px;}
 
+	footer .brand{top: 5px;width: initial; text-align: initial;right: 0px; left:initial}
+
 	.nav, .nav-top{display: none;}
 
 	.table_10{display: table;}
@@ -44,6 +46,10 @@
 	.dx-l{display: none;}
 
 	.nav-sub .nav-item {padding: 0 20px;}
+}
+
+@media (max-width: 800px){
+	footer .brand{display: none}
 }
 
 @media (max-width: 768px){

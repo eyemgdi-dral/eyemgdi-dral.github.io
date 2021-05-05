@@ -284,7 +284,7 @@ input[type="radio"] + label:after{
 .type_lm{width: 88%;}
 .type_m{width: 50%;}
 .type_ms{width: 33.333%;}
-.type_ms_x{width: 66.666%;}
+.type_ms_x{width: calc(66.666% - 3px);margin-left: 3px;}
 .type_s{width: 22.6%;}
 .type_ss{width: 16.666%;}
 .type_address {margin-top:5px}
