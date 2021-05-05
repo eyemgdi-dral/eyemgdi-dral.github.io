@@ -161,3 +161,14 @@
 
 	.comms h1.highlight{font-size: 30px;height: 30px;}
 }
+
+@media only screen and (min-width: 0px) and (max-width: 700px) {
+	.responsive_box td,
+	.responsive_box th,
+	.responsive_box textarea
+	{
+		display:inline-block;
+		padding:10px;
+		width:100%;
+	}
+}
