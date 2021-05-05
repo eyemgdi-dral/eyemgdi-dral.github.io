@@ -839,19 +839,26 @@ input[type="radio"] + label:after{
     .lg_con .lg_content .lg_form .btn_submit {height: 45px; margin-top: 0;}
 }
 /*login end*/
-
-.bcred, .bcred>th, .bcred>td {background-color: #f9ebeb}
-.bcred>th {border-right: 0}
-.bcred>td {border-left: 0; text-align: right}
-.order-basket_subtitle {padding: 15px 0;font-size: 16px;}
+.order-basket_subtitle {padding-top: 30px; padding-bottom: 10px;font-weight: 400;}
 .order-basket_count {text-align: right}
 .order-amount_con {background: #f5f5f5;padding: 15px 20px;line-height: 20px;}
-
+.order_container .info_box5 td{font-weight: lighter}
+.order_container .info_box5 td.td_right{text-align: right}
+.order_container .info_box5 th{padding: 10px;text-align: center}
+.order_container .info_box5 .bcred, .bcred>th, .bcred>td {background-color: #f9ebeb}
+.order_container .info_box5 .bcred>th {border-right: 0; font-weight: 300;text-align: left}
+.order_container .info_box5 .bcred>td {border-left: 0; text-align: right}
+.mobile_header {background: #15b943; color: white}
+.mobile_header .btn_menu .btn_icon,
+.mobile_header .btn_menu .btn_icon:after,
+.mobile_header .btn_menu .btn_icon:before {background-color: white}
+.brand .brand_title {color: white; font-size: 20px; font-weight: 600; line-height: 50px;}
+.responsive_box{width: 100%;margin-bottom: 30px;}
 .responsive_box{width: 100%;margin-bottom: 30px;}
 .responsive_box .top{border-top: 2px solid #363636;}
-.responsive_box th,.responsive_box td{border: 1px solid #d7d8de;}
+.responsive_box th,.responsive_box td{border: 1px solid #dbdbdb;}
 .responsive_box th{padding: 0 15px 0 30px;text-align: left;color: #464646;background-color: #f7f7f7;font-size: 14px;}
-.responsive_box td{padding: 10px; overflow: hidden}
+.responsive_box td{padding: 10px; overflow: hidden; line-height: 20px;}
 .responsive_box button,
 .responsive_box input[type=text],
 .responsive_box input[type=password],
