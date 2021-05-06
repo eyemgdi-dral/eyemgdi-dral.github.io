@@ -28,18 +28,16 @@
 
 <div class="container">
     <h1 class="sub-title">스마트 전단</h1>
-    <div class="sch_box2">
-        <form onsubmit="search_add(this)">
-            <select name="sfl" id="sfl" class="sfl">
-                <option>상태</option>
-                <option></option>
-            </select>
-            <input type="text" name="stx" value="" required="" id="stx" class="sch_input" size="25" maxlength="20">
-            <button type="submit" value="검색" class="btn_sch"><span>검색</span></button>
-        </form>
+    <div class="sch_box2 fs-0">
+        <select name="sfl" id="sfl" class="sfl">
+            <option>상태</option>
+            <option></option>
+        </select>
+        <input type="text" name="stx" value="" required="" id="stx" class="sch_input" size="25" maxlength="20">
+        <button type="submit" value="검색" class="btn_sch"><span>검색</span></button>
     </div>
 
-    <div class="list_box pb-20">
+    <div class="list_box">
 
         <form>
             <table class="list_lay type2">
@@ -308,9 +306,7 @@
                         <td class="show_td_lm">-</td>
                         <td class="show_td_lm">-</td>
                         <td class="show">
-                            <a href="#">
-                                <span class="btn_view">보기</span>
-                            </a>
+                            <a class="btn_view">보기</a>
                         </td>
                         <td class="show">
                             <a href="#" onclick="openPopup('#test_cg')">
@@ -321,9 +317,9 @@
                 </tbody>
             </table>
         </form>
-
     </div>
 
+    <hr class="hr_40">
     <div class="pg_wrap">
         <span class="pg">
             <a href="" class="pg_page pg_start">&#x276E;</a>
@@ -338,7 +334,7 @@
 
     <hr class="hr_40">
     <div class="text-right">
-        <a href="page-17.html" class="bri_btn btn_30 btn_big">등록하기</a>
+        <a href="page-17.html" class="bri_btn btn_30 btn_big type_3">등록하기</a>
     </div>
     <hr class="hr_80">
 </div>
