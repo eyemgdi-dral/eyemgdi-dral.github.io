@@ -29,6 +29,7 @@ p {margin:0;padding:0;word-break:break-all}
 a {text-decoration:none;vertical-align: middle;}
 input[type=text],input[type=password], input[type=number], textarea {outline: none;}
 input[type=text],input[type=password], input[type=number], select, button{vertical-align: top;border: 1px solid #b7b7b7;padding: 0 14px;line-height: 35px;height: 35px;color: #000;font-size: 14px;font-weight: 100; letter-spacing:-1px;}
+button{padding:0;}
 input[type=text].type1,input[type=password].type1,select.type1{color: #555555;line-height: 30px;height: 32px;padding: 0 10px;}
 textarea{color: #858585;font-size: 14px;border: 1px solid #b7b7b7;padding: 0 14px;resize: none;line-height: 43px;}
 @media (max-width: 768px) {
@@ -140,7 +141,8 @@ input[type="radio"] + label:after{
 .font_number{font-family: 'NanumSquareRound', dotum, sans-serif;font-weight: 800;text-shadow: 0.5px 0px 1px;}
 
 .divider{ margin:25px 0; border-bottom:1px solid #f1f1f1;}
-.divider.sm{ margin:25px 0; border-bottom:1px solid #ccc;}
+.divider.sm{ margin:12px 0; border-bottom:1px solid #ccc;}
+.divider.dark{ border-bottom-color: #676767; margin: 50px 0 0;}
 
 .hr_10{height: 10px;}
 .hr_20{height: 20px;}

@@ -11,7 +11,7 @@
 <body>
 <header></header>
 
-<h1 class="page-title">문자보내기</h1>
+<h1 class="page-title">톡보내기</h1>
 
 <div class="nav-sub-wrap">
     <div class="container">
@@ -43,10 +43,12 @@
     <hr class="hr_40">
 
     <div class="phone kakao">
-        <button class="btn_150 type_l">템플릿 선택하기</button>
+        <div class="phone-btn-con">
+            <button class="btn_150 type_l">템플릿 선택하기</button>
+        </div>
 
         <div class="text-con">
-            <p class="text-center"><span class="text-red">3,578</span>건 알림톡 발송가능</p>
+            <p class="text-center kakao-sent"><b class="text-red">3,578</b>건 알림톡 발송가능</p>
             <p class="kakao-user">업체명</p>
             <p class="template-name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;템플릿명</p>
 
@@ -151,10 +153,10 @@
         <div class="row">
             <div class="col-1-4"></div>
             <div class="col-3-4 lh_30">
-                <input type="text" class="date-picker">
+                <input type="text" class="date-picker mr-10">
                 <select>
                     <option value="">14</option>
-                </select> 시
+                </select> <span class="mr-10">시</span>
                 <select>
                     <option value="">55</option>
                 </select> 분
@@ -169,8 +171,8 @@
             </div>
             <div class="col-3-4">
                 <input type="checkbox" id="cb1" name="cb1">
-                <label for="cb1">분할전송</label>
-                <input type="text" class="type_ss"> 명씩
+                <label for="cb1" class="mr-15">분할전송</label>
+                <input type="text" class="type_ss"> <span class="mr-15">명씩</span>
                 <select>
                     <option value="">5</option>
                     <option value="">3</option>
@@ -181,13 +183,12 @@
 
     </div>
 
+    <hr class="divider dark">
     <hr class="hr_40">
 
-    <hr class="divider">
-
     <div class="btn_box">
-        <button type="submit" class="bri_btn btn_30 btn_big hvr-1">알림톡 발송하기</button>
-        <button type="submit" class="bri_btn btn_30_ol btn_big hvr-1">전체초기화</button>
+        <button type="submit" class="bri_btn btn_big type_2 hvr-1 btn_30">알림톡 발송하기</button>
+        <button type="submit" class="bri_btn btn_big type_2 hvr-1 btn_30_ol">전체초기화</button>
     </div>
 
     <h1 class="section-title">템플릿</h1>
@@ -345,6 +346,8 @@
         $("head").load("template/head.html");
         $("header").load("template/header.html");
         $("footer").load("template/footer.html");
+
+        $("#message").val("홍길동 고객님 안녕하세요.\n\n[추가정보1] 룸이 정상적으로  \n예약되었습니다.");
     });
 </script>
 </html>

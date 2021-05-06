@@ -33,7 +33,7 @@ footer .brand{
 .nav-sub {
     /*padding: 20px 0;*/
     text-align: center;
-    line-height: 60px;
+    line-height: 55px;
 }
 
 .nav-sub-wrap {
@@ -45,16 +45,17 @@ footer .brand{
 .nav-sub .nav-item {
     display: inline-block;
     padding: 0 40px;
-    color: #777;
+    color: #ccc;
 }
 .nav-sub .nav-item a{
-    color: #777;
+    color: #ccc;
     font-size: 17px;
     font-weight: 400;/*doesnt seem right so i put it to 400, but default is 100*/
 }
 
 .nav-sub .nav-item.on a{
     color: #0367c8;
+    font-weight: bold;
     /*border-bottom:1px solid #0367c8;*/
 }
 
@@ -154,7 +155,8 @@ footer p span {
 .sub-title {
     font-size: 38px;
     font-weight: bold;
-    line-height: 115px;
+    margin-top:50px;
+    margin-bottom:50px;
     text-align: center;
 }
 
@@ -364,7 +366,7 @@ footer p span {
 
 .hvr {
     position: absolute;
-    bottom: -1.4px;
+    bottom: -2.4px;
     height: 3px;
     width: 100px;
     background: #0367c8;
@@ -434,6 +436,10 @@ footer p span {
 
 .col-4-5 {
     width: calc((100% / 5) * 4);
+}
+
+.msg-manager .col-1-4:last-child{
+    padding-right:0;
 }
 
 .card {
@@ -590,7 +596,7 @@ footer p span {
 .card.kakao .card-title{
     text-align: center;
     background: #fae100;
-    padding:15px;
+    line-height: 40px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -599,7 +605,6 @@ footer p span {
     display: inline-block;
     padding-left: 30px;
     background: url(../IMG/kakao-msg.png) no-repeat left center;
-    background-size: auto 100%;
 }
 
 .card.kakao .card-detail{
@@ -675,6 +680,7 @@ ul.dotted-yellow li::before {
     background: white;
     border-radius: 0;
     height:auto;
+    padding:0;
 }
 
 .msg-manager {
@@ -723,6 +729,7 @@ ul.dotted-yellow li::before {
     text-align: left;
     border-radius: 5px;
     position: relative;
+    height: 505px;
 }
 .phone.kakao .text-con:before{
     content:"";
@@ -751,12 +758,13 @@ ul.dotted-yellow li::before {
     font-weight: 400;
 }
 
-.phone.kakao .text-con p{
-    padding:15px;
+.phone.kakao .text-con .kakao-sent{
     background: #98b8d3;
     font-size: 14px;
-    font-weight: 100;
+    height: 40px;
+    line-height: 40px;
 }
+
 
 .phone .text-con textarea {
     width: 100%;
@@ -781,17 +789,18 @@ ul.dotted-yellow li::before {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     font-weight: 400;
+    line-height: 40px;
 
 }
 
 .phone.kakao .text-con textarea {
     width: calc(100% - 100px);
     margin-left: 50px;
-    height: 230px;
+    height: 295px;
     border: none;
     resize: none;
-    background: #f3f3f3;
-    padding: 20px;
+    background: #fff;
+    padding: 15px;
     margin-top:0;
     line-height: 20px;
     color:#000;
