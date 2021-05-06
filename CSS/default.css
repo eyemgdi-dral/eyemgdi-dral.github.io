@@ -670,7 +670,7 @@ input[type="radio"] + label:after{
 .btn_box{font-size: 0;text-align: center;padding: 10px 0 40px;}
 .bri_btn{/*width: 110px;*/line-height: 40px;height: 40px;display: inline-block;color: #ffffff;font-size: 14px!important;text-align: center;margin: 0 2px;cursor:pointer;padding:0 25px;}
 
-.btn_0{background-color: #ed1c24;border:1px solid #ed1c24;}
+.btn_0{background-color: #e34b4b;border:1px solid #e34b4b;color: #ffffff !important;}
 .btn_10{background-color: #969696;border:1px solid #969696;color: #ffffff !important;}
 .btn_20{background-color: #252525;border:1px solid #252525;color: #ffffff !important;}
 .btn_30{background-color: #0367c8;border:1px solid #0367c8;}
@@ -692,7 +692,7 @@ input[type="radio"] + label:after{
 
 
 
-.btn_0_ol{color: #ed1c24;background-color:#fff;border:1px solid #ed1c24;}
+.btn_0_ol{color: #e34b4b;background-color:#fff;border:1px solid #e34b4b;color: #e34b4b!important;}
 .btn_10_ol{color: #969696;background-color:#fff;border:1px solid #969696;}
 .btn_20_ol{color: #252525;background-color:#fff;border:1px solid #252525;}
 .btn_30_ol{color: #0367c8;background-color:#fff;border:1px solid #0367c8;}
@@ -740,6 +740,8 @@ input[type="radio"] + label:after{
 .required:after{content: "*";position: absolute;width: 4px;height: 4px;color: red;margin-top: -2px;}
 .cpointer{cursor: pointer;}
 .it_num {text-align: right!important;}
+.border-l-0 {border-left: none!important;}
+.border-r-0 {border-right: none!important;}
 
 .upload-img_wrap {width: 90px; height: 90px; position: relative; float: left; padding-top: 10px;}
 .upload-img_wrap a.close {position: absolute;background: white;color: red;right: 0px;margin: 3px;text-align: center;padding: 2px 6px;font-size: 12px;line-height: normal}
@@ -844,25 +846,45 @@ input[type="radio"] + label:after{
 /*login end*/
 
 /*mobile order*/
-.order_container input[type="radio"]:checked + label:before {background: url(../IMG/chk_green.png) no-repeat -2px -2px;}
-.order_container .info_box5 td{font-weight: lighter}
-.order_container .info_box5 td.td_right{text-align: right}
-.order_container .info_box5 th{padding: 10px;text-align: center}
-.order_container .info_box5 .bcred, .bcred>th, .bcred>td {background-color: #f9ebeb}
-.order_container .info_box5 .bcred>th {border-right: 0; font-weight: 300;text-align: left}
-.order_container .info_box5 .bcred>td {border-left: 0; text-align: right}
-
-.order-basket_subtitle {padding-top: 30px; padding-bottom: 10px;font-weight: 400;}
-.order-basket_count {text-align: right; padding: 20px 0;}
-.order-basket_count .basket_count{ border: 1px solid #d7d8de; padding: 3px 10px; margin-left: 5px;}
-.order-basket_count .basket_total{ border: 1px solid #d7d8de; padding: 3px 10px 3px 30px; margin-left: 5px; color:#e55d5d;}
-.order-amount_con {background: #f5f5f5;padding: 15px 20px;line-height: 20px;}
-
 .mobile_header {background: #15b943; color: white}
 .mobile_header .btn_menu .btn_icon,
 .mobile_header .btn_menu .btn_icon:after,
 .mobile_header .btn_menu .btn_icon:before {background-color: white}
 .mobile_header .brand .brand_title {color: white; font-size: 20px; font-weight: 600; line-height: 50px;}
+
+.mobile_container input[type="radio"]:checked + label:before {background: url(../IMG/chk_green.png) no-repeat;}
+.mobile_container .w80 {margin: 0 auto;padding: 0 20px;}
+.mobile_container .info_box5 td{font-weight: lighter}
+.mobile_container .info_box5 td.td_right{text-align: right}
+.mobile_container .info_box5 td.td_center{text-align: center}
+.mobile_container .info_box5 td .btn{padding: 0px 11px; font-size: 15px;}
+.mobile_container .info_box5 th{padding: 10px;text-align: center}
+.mobile_container .info_box5 .bcred, .bcred>th, .bcred>td {background-color: #f9ebeb}
+.mobile_container .info_box5 .bcred>th {border-right: 0; font-weight: 300;text-align: left}
+.mobile_container .info_box5 .bcred>td {border-left: 0; text-align: right}
+.mobile_container .order-basket_subtitle {padding-top: 30px; padding-bottom: 10px;font-weight: 400;}
+.mobile_container .order-basket_count {text-align: right; padding: 20px 0;line-height: 35px;}
+.mobile_container .order-basket_count .order-basket_txt{ display: inline-block;}
+.mobile_container .order-basket_count .order-basket_txt .basket_count{ border: 1px solid #d7d8de; padding: 6px 14px 7px 12px; margin-left: 5px;}
+.mobile_container .order-basket_count .order-basket_txt .basket_total{ border: 1px solid #d7d8de; padding: 6px 10px 7px 30px; margin-left: 5px; color:#e55d5d;}
+.mobile_container .order-basket_count .order-basket_btn{ display: inline-block; margin-left: 5px;}
+.mobile_container .order-basket_count .order-basket_btn button{ padding: 0 5px;}
+.mobile_container .order-amount_con {background: #f5f5f5;padding: 15px 20px;line-height: 20px;}
+.mobile_container .order-amount_con .order-amount_date {font-weight: 300}
+.mobile_container .order-searchbox_con {text-align: center}
+.mobile_container .order-searchbox_con input {width: calc(100% - 41px); position: relative; right: -5px;}
+.mobile_container .order-searchbox_btn:before {content:""; display: inline-block;position: relative; top: -1px;width: 36px; height: 36px;background-image: url("../IMG/search.png");}
+.mobile_container .order-amount_con.center_desc {text-align: center; margin: 25px 0;}
+.mobile_container .ver_input {text-align: center;padding: 52px 90px 42px 90px;}
+.mobile_container .ver_desc {text-align: center;margin-bottom: 15px}
+.mobile_container .basket_desc {margin-bottom: 20px}
+.mobile_container .order_feature_con .info_box5 {margin: 0}
+.mobile_container .order_feature_con .info_box5 td>button {margin-bottom: 5px}
+.mobile_container .order_feature_con .order_feature_header {color: white;text-align: left;padding: 10px 12px; height: 56px; line-height: 35px}
+.mobile_container .order_feature_con .order_feature_header.primary_header {background-color: #3268b0}
+.mobile_container .order_feature_con .order_feature_header.yellow_header {background-color: #e9911e}
+.mobile_container .order_feature_con .order_feature_header.violet_header {background-color: #914ed5}
+
 
 .responsive_box{width: 100%;margin-bottom: 30px;}
 .responsive_box{width: 100%;margin-bottom: 30px;}
