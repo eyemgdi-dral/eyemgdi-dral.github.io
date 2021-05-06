@@ -247,6 +247,22 @@ footer p span {
     margin-left: 30px;
 }
 
+.mr-10 {
+    margin-right: 10px;
+}
+
+.mr-15 {
+    margin-right: 15px;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.mr-30 {
+    margin-right: 30px;
+}
+
 .px-5 {
     padding-left: 5px;
     padding-right: 5px;
@@ -690,7 +706,7 @@ ul.dotted-yellow li::before {
 
 .input-append + input,
 .input-append + select {
-    width: calc(100% - 130px);
+    width: calc(100% - 130px)!important;
 }
 
 .phone .text-con {
@@ -903,6 +919,12 @@ ul.dotted-yellow li::before {
     border-right: none;
 }
 
+.msg-manager h1{
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
 .msg-manager button,
 .msg-manager select,
 .msg-manager input {
@@ -910,6 +932,10 @@ ul.dotted-yellow li::before {
     height: 35px;
     color: #000;
     font-size: 14px;
+}
+
+.msg-manager select{
+    width:80px;
 }
 
 textarea {
