@@ -11,9 +11,9 @@
 <body>
 <header></header>
 
-<div class="container order_container">
+<div class="container mobile_container">
     <div class="order-basket_count">
-        <p class="f105">담으신 상품
+        <p class="order-basket_txt">담으신 상품
             <strong class="basket_count">4</strong> 개
             <strong class="basket_total">8,500</strong> 원
         </p>
@@ -47,8 +47,8 @@
                             <option value="">1</option>
                         </select>
                     </td>
-                    <td class="show" rowspan="2">
-                        <button>&#10006;</button>
+                    <td class="show td_center" rowspan="2">
+                        <button class="btn">&#10006;</button>
                     </td>
                 </tr>
                 <tr>
@@ -62,8 +62,8 @@
                             <option value="">1</option>
                         </select>
                     </td>
-                    <td class="show" rowspan="2">
-                        <button>&#10006;</button>
+                    <td class="show td_center" rowspan="2">
+                        <button class="btn">&#10006;</button>
                     </td>
                 </tr>
                 <tr>
@@ -73,7 +73,8 @@
             <tfooter>
                 <tr class="bcred">
                     <th>총 금액</th>
-                    <td class="text-center s_red" colspan="2">6,000원</td>
+                    <td class="td_right s_red border-r-0">6,000원</td>
+                    <td class="border-l-0"></td>
                 </tr>
             </tfooter>
         </table>
@@ -141,7 +142,7 @@
 <script>
     $(function () {
         $("head").load("template/head.html");
-        $("header").load("template/header.html");
+        $("header").load("template/mobile_header.html");
         $("footer").load("template/footer.html");
     });
 </script>
