@@ -168,7 +168,17 @@
 	.comms h1.highlight{font-size: 30px;height: 30px;}
 }
 
-@media only screen and (min-width: 0px) and (max-width: 700px) {
+@media only screen and (min-width: 0px) and (max-width: 720px) {
+	nav{height: 105px;position: relative;}
+	.btn_menu {width: 60px; left: 40px;line-height: 105px;}
+	.btn_menu .btn_icon:before {width: 50%; left: 0;top: 40px;}
+	.btn_menu .btn_icon:after {top: 20px;}
+	.btn_menu .btn_icon,
+	.btn_menu .btn_icon:after,
+	.btn_menu .btn_icon:before {height: 5px}
+	.login-con {padding: 0;line-height: 105px; margin: 23px 40px;}
+	.brand {top: 0}
+
 	.responsive_box td,
 	.responsive_box th,
 	.responsive_box textarea
@@ -178,6 +188,45 @@
 		width:100%;
 	}
 
+	.mobile_container {
+		max-width: 720px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 40px;
+		font-size: 0;
+	}
+	.mobile_container *,
+	.mobile_container .info_box5 th,
+	.mobile_container .info_box5 td,
+	.mobile_container .info_box5 td *,
+	.mobile_container .responsive_box th,
+	.mobile_container .responsive_box td,
+	.mobile_container .responsive_box td *,
+	.mobile_container input[type="radio"] + label,
+	.mobile_container input[type="checkbox"] + label,
+	.mobile_container input[type=text],
+	.mobile_container input[type=password],
+	.mobile_container input[type=number],
+	.mobile_container select,
+	.mobile_container button
+	{
+		font-size: 28px;
+	}
+	.mobile_footer {
+		max-width: 720px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 30px;
+		font-size: 0;
+		text-align: center;
+	}
+	.mobile_footer p,
+	.mobile_footer p>span {
+		font-size: 26px;
+	}
+	.mobile_container .btn_box .bri_btn.btn_big {
+		font-size: 32px!important;
+	}
 	.mobile_container .bri_btn {
 		display: inline-block;
 		width: 48%;
