@@ -318,7 +318,9 @@ footer p span{
 .text-center{
 	text-align: center !important;
 }
-
+.lh_0{
+	line-height: 0!important;
+}
 .lh_30{
 	line-height: 30px;
 }
