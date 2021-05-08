@@ -612,7 +612,8 @@ input[type="radio"] + label:after{
 .info_box6{width: 100%;margin-bottom: 30px;}
 .info_box6 .top{border-top: 2px solid #363636;}
 .info_box6 th,.info_box6 td{border: 1px solid #dbdbdb;}
-.info_box6 th{padding:15px 0;color: #464646;background-color: #f3f4fa;font-size: 15px;white-space: nowrap;overflow: hidden;}
+/*page-17*/
+.info_box6 th{padding:15px 0;color: #464646;background-color: #f7f7f7;font-size: 14px;white-space: nowrap;overflow: hidden;}
 .info_box6 td{padding: 10px; text-align: center; overflow: hidden}
 .info_box6 button,
 .info_box6 input[type=text],
