@@ -601,7 +601,8 @@ input[type="radio"] + label:after{
 .info_box5 .top{border-top: 2px solid #363636;}
 .info_box5 th,.info_box5 td{border: 1px solid #dbdbdb;}
 .info_box5 th{width: 200px;padding: 0 15px 0 30px ;text-align: left;color: #464646;background-color: #f7f7f7;font-size: 14px;}
-.info_box5 td{padding: 10px 12px;height: 49px;font-weight: 300; line-height: 65px; font-size: 14px;}
+/*page-17*/
+.info_box5 td{padding:10px 12px 10px 20px;height: 54px;font-weight: 300; font-size: 14px;}
 .info_box5 td *{font-size: 14px;}
 .info_box5 button,
 .info_box5 input[type=text],
