@@ -292,10 +292,13 @@ input[type="radio"] + label:after{
 .type_ss{width: 16.666%;}
 .type_address {margin-top:5px}
 
+
 .w_90{
     width: 90px!important;
 }
-
+.w_190{
+    width: 190px!important;
+}
 
 .type_tel{width: 130px;}
 .type_tel::-webkit-outer-spin-button,
@@ -468,6 +471,8 @@ input[type="radio"] + label:after{
 .sch_box2 .col_30{display: inline-block;}
 .sch_box2 .type_calendar{background: #ffffff url("../IMG/calendar.png") no-repeat center right 10px;padding-right: 40px;cursor: pointer;width: 210px;margin: 0 11px;}
 .sch_box2 .sfl{width: 90px;color: #252525;font-size: 14px;margin-right: 8px;height: 34px;line-height:34px;}
+/*page-32*/
+.sch_box2 .sfl.type2{width: 120px}
 .sch_box2 .sch_input{width: 290px;color: #252525;font-size: 15px;margin-right: 5px;height: 34px;line-height:34px;}
 .sch_box2 .btn_sch{width:67px;background-color: #868687;color: #ffffff;font-size: 14px;height: 34px;line-height:34px;border: none;}/*img text*/
 .sch_box2 .btn_sch:before {content:"";display: inline-block;position: relative;top:3px;margin-right:3px;width:17px;height:17px;background-image: url("../IMG/magnifier.gif");background-position: center center;background-repeat: no-repeat;}
@@ -615,6 +620,7 @@ input[type="radio"] + label:after{
 .info_box5 input[type=text],
 .info_box5 input[type=password],
 .info_box5 select{line-height: 35px;height: 35px;font-size: 13px;min-width: 50px;}
+/*page-33*/
 /*page-30*/
 .info_box5 textarea{height: 120px;resize: none;padding: 14px; font-size: 14px;line-height: 22px; letter-spacing:-0.7px;}
 
@@ -742,7 +748,7 @@ input[type="radio"] + label:after{
 .btn_edit{color: #ed1c24!important;background-color:#fff;border:1px solid #ed1c24;font: 400 12px Arial;padding: 4px 6px;appearance: auto;height:auto;vertical-align: middle; font-size: 12px!important;}
 .btn_send,
 .btn_select{background-color: #999999;border:1px solid #999999;color: #ffffff !important;padding: 4px 6px;appearance: auto; height:auto;vertical-align:baseline; font-size: 13.3333px!important; line-height:initial;font-size: 12px!important;}
-.btn_file{background-color: #f5f5f5;font-size: 14px;appearance: auto;cursor:pointer}
+.btn_file{background-color: #f5f5f5;font-size: 14px;appearance: auto;cursor:pointer; padding:0 25px;}
 .btn_crop{background-color: #868688;color: #ffffff !important;font-size: 14px;padding: 0px 20px;appearance: auto;vertical-align: middle;cursor:pointer}
 .msg-manager .btn_view, .msg-manager .btn_edit, .msg-manager .btn_send{padding:0 6px}
 
@@ -976,7 +982,7 @@ canvas {max-width: 100%; max-height: 100%;}
 .tab_wrap .tabs{float: left;}
 .tab_wrap .tabs:nth-child(n+2){margin-left: -1px;}
 .tab_wrap .tabs a{
-    display: block;width: 160px;border-right: 1px solid #d7d7d7; border-top: 1px solid #d7d7d7;border-left: 1px solid #d7d7d7;text-align: center;font-size: 15px;color: #636363;line-height: 50px;position: relative;z-index: 2;
+    display: block;width: 160px;border-right: 1px solid #d7d7d7; border-top: 1px solid #d7d7d7;border-left: 1px solid #d7d7d7;text-align: center;font-size: 15px;color: #636363;line-height: 47px;position: relative;z-index: 2;
     letter-spacing: -1px; font-weight: 300;
 }
 .tab_wrap.sm .tabs a{

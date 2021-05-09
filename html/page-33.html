@@ -35,7 +35,7 @@
                 <th>이미지 첨부</th>
                 <td>
                     <div class="file-input">
-                        <input type="text" readonly="" id="filename" value="선택한 파일 없음">
+                        <input type="text" readonly="" id="filename" value="대파.jpg">
                         <button type="button" value="파일찾기" class="btn_file"><span>파일찾기</span></button>
                         <input type="file" name="file" class="type_ms" value="Event 빨색간색" accept=".jpg, .JPG, .JPEG, .jpeg, .png, .PNG"
                                onchange="$('#filename').val(this.value.split('\\')[2]).show()">
@@ -50,7 +50,7 @@
                 <th class="required">카테고리</th>
                 <td>
                     <p class="p_10">카테고리</p>
-                    <select class="type_ms" name="Price">
+                    <select class="w_190" name="Price">
                         <option value="">채소</option>
                         <option value="">채소1</option>
                         <option value="">채소2</option>
@@ -68,27 +68,27 @@
                 <th>규격</th>
                 <td>
                     <p class="p_10">규격</p>
-                    <input type="text" name="Owner_Name" class="type_ms" value="1단">
+                    <input type="text" name="Owner_Name" class="w_190" value="1단">
                 </td>
             </tr>
             <tr>
                 <th>정상가</th>
                 <td style="font-size: 15px;">
-                    <input type="text" class="type_ms it_num" value="2,000">
+                    <input type="text" class="w_190 it_num" value="2,000">
                     <span class="">원</span>
                 </td>
             </tr>
             <tr>
                 <th>할인가</th>
                 <td style="font-size: 15px;">
-                    <input type="text" class="type_ms it_num s_red" value="1,500">
+                    <input type="text" class="w_190 it_num s_red" value="1,500">
                     <span class="">원</span>
                 </td>
             </tr>
         </table>
         <div class="btn_box">
-            <a href="javascript:void(0)" onclick="" class="bri_btn btn_30 btn_big">수정하기</a>
-            <a href="page-32.html" class="bri_btn btn_30_ol btn_big">목록으로</a>
+            <a href="javascript:void(0)" onclick="" class="bri_btn btn_30 type_3 btn_big">수정하기</a>
+            <a href="page-32.html" class="bri_btn btn_30_ol type_3 btn_big">목록으로</a>
         </div>
     </form>
 </div>
