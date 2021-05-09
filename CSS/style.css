@@ -34,12 +34,12 @@ footer .brand{
 .nav-sub{
 	/*padding: 20px 0;*/
 	text-align: center;
-	line-height: 55px;
+	line-height: 54px;
 }
-
+/*5.7*/
 .nav-sub-wrap{
-	border-top: 1px solid #777;
-	border-bottom: 1px solid #777;
+	height: 56px;
+	border-bottom: 1px solid #ccc;
 	position: relative;
 }
 
@@ -48,9 +48,9 @@ footer .brand{
 	padding: 0 40px;
 	color: #ccc;
 }
-
+/*5.7*/
 .nav-sub .nav-item a{
-	color: #ccc;
+	color: #777;
 	font-size: 17px;
 	font-weight: 400; /*doesnt seem right so i put it to 400, but default is 100*/
 }
@@ -227,6 +227,10 @@ footer p span{
 	margin-top: 15px;
 }
 
+.mb-7{
+	margin-bottom: 7px;
+}
+
 .mb-10{
 	margin-bottom: 10px;
 }
@@ -387,7 +391,7 @@ footer p span{
 
 .hvr{
 	position: absolute;
-	bottom: -2.4px;
+	bottom: -1.3px;
 	height: 3px;
 	width: 100px;
 	background: #0367c8;
@@ -660,6 +664,7 @@ footer p span{
 	color: #000;
 	margin-top: 2px;
 	font-size: 13px;
+	background: #e6e6e6;
 }
 
 .box{
@@ -811,7 +816,7 @@ ul.dotted-yellow li::before{
 }
 
 .phone.kakao .text-con{
-	margin-top: 10px;
+	margin-top: 0;
 	background: #b2c7d9;
 	padding: 35px 0;
 	text-align: left;

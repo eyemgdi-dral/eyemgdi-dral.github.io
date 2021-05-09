@@ -110,10 +110,11 @@ input[type="radio"]{
     position: absolute; width: 1px; height: 1px; padding: 0;
     margin: -1px; overflow: hidden; clip:rect(0,0,0,0); border: 0;
 }
+/*page-8, page-10, page-12*/
 input[type="radio"] + label{
     display: inline-block; position: relative; padding-left: 25px; cursor: pointer;
     -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;
-    font-size: 15px; line-height: 18px;margin-right: 30px;
+    font-size: 14px; line-height: 18px;margin-right: 30px;
 }
 input[type="radio"] + label:before{
     content: '';
@@ -665,7 +666,7 @@ input[type="radio"] + label:after{
 .bri_btn{/*width: 110px;*/line-height: 40px;height: 40px;display: inline-block;color: #ffffff;font-size: 14px!important;text-align: center;margin: 0 2px;cursor:pointer;padding:0 25px;}
 
 .btn_0{background-color: #e34b4b;border:1px solid #e34b4b;color: #ffffff !important;}
-.btn_10{background-color: #969696;border:1px solid #969696;color: #ffffff !important;}
+.btn_10{background-color: #7f7f7f;border:1px solid #7f7f7f;color: #ffffff !important;}
 .btn_20{background-color: #252525;border:1px solid #252525;color: #ffffff !important;}
 .btn_30{background-color: #0367c8;border:1px solid #0367c8;}
 .btn_40{background-color: #00aef0;border:1px solid #00aef0;}
@@ -679,7 +680,7 @@ input[type="radio"] + label:after{
 .btn_120{background-color: #9b94ee;border:1px solid #9b94ee;color: #ffffff !important;}
 .btn_130{background-color: #ed9a7d;border:1px solid #ed9a7d;color: #ffffff !important;}
 .btn_140{background-color: #ffffff;border:1px solid #aeaeae;}
-.btn_150{background-color: #ef791a;border:1px solid #ef791a;color: #ffffff !important;}
+.btn_150{background-color: #f78810;border:1px solid #f78810;color: #ffffff !important;}
 .btn_160{background-color: #fae100;border:1px solid #fae100;color:#000!important;}
 .btn_170{background-color: #f8fcff;border:1px solid #0367c8;color:#000!important;}
 .btn_180{background-color: #666;border:1px solid #666;color:#fff!important;}
@@ -701,7 +702,7 @@ input[type="radio"] + label:after{
 .btn_120_ol{color: #9b94ee;background-color:#fff;border:1px solid #9b94ee;}
 .btn_130_ol{color: #ed9a7d;background-color:#fff;border:1px solid #ed9a7d;}
 .btn_140_ol{color: #000000;background-color:#aeaeae;border:1px solid #ffffff;}
-.btn_150_ol{color: #000000;background-color:#ffffff;border:1px solid #ef791a;}
+.btn_150_ol{color: #000000;background-color:#ffffff;border:1px solid #f78810;}
 .btn_160_ol{color: #000000;background-color:#ffffff;border:1px solid #fae100;}
 
 .btn_big{line-height: 50px;height: 50px;font-size: 15px!important;padding-left: 40px;padding-right: 40px;font-weight: 400;}
@@ -823,7 +824,7 @@ input[type="radio"] + label:after{
 .lg_con .lg_content .lg_logo {padding: 30px 0}
 .lg_con .lg_content .lg_form {padding-left: 70px;}
 .lg_con .lg_content .lg_form input { height: 60px; padding-left:15px; margin-bottom: 15px;}
-.lg_con .lg_content .lg_form .btn_submit { width: 100%; height: 60px; border: none; background-color: #ef791a; color: #ffffff; font-size: 16px; font-weight: bold; margin-top: 5px; cursor: pointer}
+.lg_con .lg_content .lg_form .btn_submit { width: 100%; height: 60px; border: none; background-color: #f78810; color: #ffffff; font-size: 16px; font-weight: bold; margin-top: 5px; cursor: pointer}
 .lg_con .lg_footer .lg_desc p {margin: 35px; font-size: 14px; color: #444444;line-height: 25px;}
 .lg_con .lg_footer .lg_desc p span {color: #0367c8;font-size: 14px;}
 .lg_con .lg_footer button { font-size: 13px; color: #000000; cursor: pointer}
