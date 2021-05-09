@@ -36,6 +36,7 @@ footer .brand{
 	text-align: center;
 	line-height: 54px;
 }
+
 /*5.7*/
 .nav-sub-wrap{
 	height: 56px;
@@ -48,6 +49,7 @@ footer .brand{
 	padding: 0 40px;
 	color: #ccc;
 }
+
 /*5.7*/
 .nav-sub .nav-item a{
 	color: #777;
@@ -191,7 +193,7 @@ footer p span{
 }
 
 .text-right{
-	text-align: right!important;
+	text-align: right !important;
 }
 
 /*utility*/
@@ -275,6 +277,11 @@ footer p span{
 	margin-right: 30px;
 }
 
+.mx-5{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
 .px-5{
 	padding-left: 5px;
 	padding-right: 5px;
@@ -314,6 +321,7 @@ footer p span{
 .bw-2{
 	border-width: 2px;
 }
+
 .bw-3{
 	border-width: 3px;
 }
@@ -329,9 +337,11 @@ footer p span{
 .text-center{
 	text-align: center !important;
 }
+
 .lh_0{
-	line-height: 0!important;
+	line-height: 0 !important;
 }
+
 .lh_30{
 	line-height: 30px;
 }
@@ -460,6 +470,7 @@ footer p span{
 .col-1-5{
 	width: calc((100% - 80px) / 5);
 }
+
 /* uul ni 'span'-tai code bichih ystoi bsan. dahij col-toi code deer asuudal uuswel 'span'-tai hesgiin code-g tomoor yanzlah heregtei*/
 .col-2-5{
 	width: calc(((100% - 30px) / 5) * 2);
@@ -601,6 +612,7 @@ footer p span{
 .card-detail{
 	vertical-align: top;
 }
+
 /*USER FOR: page-17*/
 .card-detail input,
 .card-detail button{
@@ -1835,6 +1847,20 @@ button{
 	transition: 0s
 }
 
+.input-group{
+	width: 100%;
+}
+.input-group input{
+	display: inline-block;
+	width: calc(100% - 15px)!important;
+}
+.input-group .append{
+	text-align: right;
+	display: inline-block;
+	width: 15px;
+	line-height: 35px;
+}
+
 /**/
 @keyframes hovering2{
 	0%{
@@ -1844,8 +1870,9 @@ button{
 		left: 66%;
 	}
 }
-
 /**/
+
+
 
 
 

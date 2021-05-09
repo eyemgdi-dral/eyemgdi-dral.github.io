@@ -284,13 +284,18 @@ input[type="radio"] + label:after{
 
 /*리스트*/
 .type_l{width: 100%;}
-.type_lm{width: 88%;}
+.type_lm{width: 88%!important;}
 .type_m{width: 50%;}
 .type_ms{width: 33.333%;}
 .type_ms_x{width: calc(66.666% - 3px);margin-left: 3px;}
 .type_s{width: 22.6%;}
 .type_ss{width: 16.666%;}
 .type_address {margin-top:5px}
+
+.w_90{
+    width: 90px!important;
+}
+
 
 .type_tel{width: 130px;}
 .type_tel::-webkit-outer-spin-button,
@@ -626,6 +631,19 @@ input[type="radio"] + label:after{
 .info_box6 select{line-height: 35px;height: 35px;font-size: 14px;color: #555555; letter-spacing:-1px; width: 100%; min-width: 48px;}
 .info_box6 .img_con{padding-left: 30px; padding-right: 30px;}
 /*.info_box6 textarea{height: 120px;margin: 5px 0;resize: none;padding: 14px;font-size: 15px;line-height: 22px;}*/
+
+.info_box7{width: 100%;margin-bottom: 30px;}
+.info_box7 .top{border-top: 2px solid #363636;}
+.info_box7 th,.info_box7 td{border: 1px solid #dbdbdb;}
+/*page-17*/
+.info_box7 th{padding:15px 0;color: #464646;background-color: #f7f7f7;font-size: 14px;white-space: nowrap;overflow: hidden;}
+/*page-32*/
+.info_box7 td{padding: 5px; text-align: center; overflow: hidden; height: 44px;}
+.info_box7 button,
+.info_box7 input[type=text],
+.info_box7 input[type=password],
+.info_box7 select{line-height: 35px;height: 35px;font-size: 14px;color: #555555; letter-spacing:-1px; width: 100%; min-width: 48px;}
+.info_box7 .img_con{padding-left: 30px; padding-right: 30px;}
 
 /*우편번호검색*/
 #layer{position: fixed;width: 100%;height: 100%;top: 0;left: 0;background-color: rgba( 0, 0, 0, 0.6 );z-index: 9999;}
