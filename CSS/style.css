@@ -191,7 +191,7 @@ footer p span{
 }
 
 .text-right{
-	text-align: right;
+	text-align: right!important;
 }
 
 /*utility*/
@@ -305,6 +305,13 @@ footer p span{
 
 .pb-20{
 	padding-bottom: 20px;
+}
+
+.bw-2{
+	border-width: 2px;
+}
+.bw-3{
+	border-width: 3px;
 }
 
 .d-inline-block{
@@ -1628,7 +1635,7 @@ input[type=file]{
 	position: absolute;
 	top: 230px;
 	left: calc(100% + 30px);
-	width: 125px;
+	width: 120px;
 	text-align: center;
 }
 

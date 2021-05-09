@@ -617,11 +617,13 @@ input[type="radio"] + label:after{
 .info_box6 th,.info_box6 td{border: 1px solid #dbdbdb;}
 /*page-17*/
 .info_box6 th{padding:15px 0;color: #464646;background-color: #f7f7f7;font-size: 14px;white-space: nowrap;overflow: hidden;}
-.info_box6 td{padding: 10px; text-align: center; overflow: hidden}
+/*page-32*/
+.info_box6 td{padding: 10px 20px; text-align: center; overflow: hidden; height: 44px;}
 .info_box6 button,
 .info_box6 input[type=text],
 .info_box6 input[type=password],
 .info_box6 select{line-height: 35px;height: 35px;font-size: 14px;color: #555555; letter-spacing:-1px; width: 100%; min-width: 48px;}
+.info_box6 .img_con{padding-left: 30px; padding-right: 30px;}
 /*.info_box6 textarea{height: 120px;margin: 5px 0;resize: none;padding: 14px;font-size: 15px;line-height: 22px;}*/
 
 /*우편번호검색*/
