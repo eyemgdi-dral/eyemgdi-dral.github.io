@@ -194,7 +194,10 @@
 		margin: 0 auto;
 		padding: 0 40px;
 		font-size: 0;
-		min-height: 63vh;
+	}
+	.mobile_container.greydesc {
+		background: #f5f5f5;
+		letter-spacing: 0px;
 	}
 	.mobile_container *,
 	.mobile_container .info_box5 th,
@@ -239,6 +242,9 @@
 	}
 	.mobile_container .btn_box {
 		padding: 60px 0 100px 0;
+	}
+	.mobile_container .btn_box.p50 {
+		padding: 50px 0 100px 0;
 	}
 	.mobile_container .btn_box .bri_btn.btn_big {
 		font-size: 32px!important;

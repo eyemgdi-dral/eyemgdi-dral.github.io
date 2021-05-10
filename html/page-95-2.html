@@ -18,11 +18,17 @@
             <strong class="basket_total">8,500</strong> 원
         </p>
     </div>
+</div>
+<div class="mobile_container greydesc">
     <div class="order-amount_con">
         <p class="order-amount_desc">
-            <span class="text-red">50,000</span>원 이상 배송 가능하며,(마트 픽업은 해당사항 없음) 상품 수량은 주문페이지에서 +, - 수정 가능합니.
+            <span class="text-red">50,000</span>
+            원 이상 배송 가능하며,(마트 픽업은 해당사항 없음)
+            상품 수량은 주문페이지에서 +, - 수정 가능합니.
         </p>
     </div>
+</div>
+<div class="mobile_container">
     <div class="order-basket_con">
         <div class="order-basket_subtitle">장바구니내역</div>
         <table class="info_box5">
@@ -43,45 +49,51 @@
                     <td class="show td_left" rowspan="2">상추 1봉</td>
                     <td class="show td_right">
                         2,000원
-                        <select class="type_l" name="" id="">
+                        <select class="type_l mt20" name="" id="">
                             <option value="">1</option>
                         </select>
                     </td>
                     <td class="show td_center" rowspan="2">
-                        <button class="btn">&#10006;</button>
+                        <button type="button" class="btn cpointer"><img src="../IMG/del_icon.png" alt=""></button>
                     </td>
                 </tr>
                 <tr>
-                    <td class="show td_right s_blue">2,000원</td>
+                    <td class="show td_right">
+                        <span class="s_blue">2,000</span>원
+                    </td>
                 </tr>
                 <tr>
                     <td class="show" rowspan="2">삼겹살 1근</td>
                     <td class="show td_right">
                         2,000원
-                        <select class="type_l" name="" id="">
+                        <select class="type_l mt20" name="" id="">
                             <option value="">1</option>
                         </select>
                     </td>
                     <td class="show td_center" rowspan="2">
-                        <button class="btn">&#10006;</button>
+                        <button type="button" class="btn cpointer"><img src="../IMG/del_icon.png" alt=""></button>
                     </td>
                 </tr>
                 <tr>
-                    <td class="show td_right s_blue">2,000원</td>
+                    <td class="show td_right">
+                        <span class="s_blue">2,000</span>원
+                    </td>
                 </tr>
             </tbody>
             <tfooter>
                 <tr class="bcred">
                     <th>총 금액</th>
-                    <td class="td_right s_red border-r-0">6,000원</td>
+                    <td class="td_right border-r-0">
+                        <span class="s_red font400">6,000</span>원
+                    </td>
                     <td class="border-l-0"></td>
                 </tr>
             </tfooter>
         </table>
 
-        <div class="order-basket_subtitle">고객및결제정보</div>
+        <div class="order-basket_subtitle">고객 및 결제정보</div>
         <form id="userForm" name="userForm" onsubmit="return userUpdate(this);" enctype="multipart/form-data">
-            <table class="responsive_box">
+            <table class="responsive_box has_input">
                 <tr>
                     <th class="required">고객명</th>
                     <td>
@@ -101,7 +113,7 @@
                         <label for="radio11">카드결제(배달)</label>
                         <input type="radio" id="radio22" name="radio2">
                         <label for="radio22">현금결제(배달)</label>
-                        <input type="radio" id="radio33" name="radio33">
+                        <input type="radio" id="radio33" name="radio2">
                         <label for="radio33">직접 마트 픽업</label>
                     </td>
                 </tr>
@@ -128,7 +140,7 @@
     </div>
     <div class="basket_desc"> ※ 추가 주문 여부에 따라 실 결제금액은 달라질 수 있습니다.</div>
 
-    <div class="btn_box">
+    <div class="btn_box p50">
         <a href="javascript:void(0)" onclick="" class="bri_btn btn_20 btn_big">확인</a>
         <a href="page-32.html" class="bri_btn btn_20_ol btn_big">취소</a>
     </div>
