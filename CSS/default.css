@@ -761,6 +761,7 @@ input[type="radio"] + label:after{
 .cpointer{cursor: pointer;}
 .it_num {text-align: right!important;}
 .font400 {font-weight: 400}
+.mt20 {margin-top: 20px}
 .border-l-0 {border-left: none!important;}
 .border-r-0 {border-right: none!important;}
 
@@ -875,23 +876,25 @@ input[type="radio"] + label:after{
 
 .mobile_container input[type="radio"]:checked + label:before {background: url(../IMG/chk_green.png) no-repeat;}
 .mobile_container .w80 {margin: 0 auto;padding: 0 20px;}
+.mobile_container .info_box5 {margin: 0}
 .mobile_container .info_box5 td{font-weight: lighter;padding: 25px;}
 .mobile_container .info_box5 td.td_right{text-align: right}
 .mobile_container .info_box5 td.td_center{text-align: center}
-.mobile_container .info_box5 td .btn{padding: 0px 11px;}
+.mobile_container .info_box5 td .btn{line-height: 55px;height: 55px;width: 55px;}
 .mobile_container .info_box5 th{padding: 25px 0;text-align: center}
 .mobile_container .info_box5 .bcred, .bcred>th, .bcred>td {background-color: #f9ebeb}
-.mobile_container .info_box5 .bcred>th {border-right: 0; font-weight: 300;text-align: left; padding: 25px}
+.mobile_container .info_box5 .bcred>th {border-right: 0; font-weight: 400;text-align: left; padding: 25px}
 .mobile_container .info_box5 .bcred>td {border-left: 0; text-align: right}
 .mobile_container .order-basket_subtitle {padding-top: 40px; padding-bottom: 20px;font-weight: 600;}
 .mobile_container .order-basket_subtitle.p60 {padding-top: 60px;}
-.mobile_container .order-basket_count {text-align: right; padding: 20px 0;line-height: 65px;}
+.mobile_container .order-basket_count {text-align: right; padding: 40px 0;line-height: 65px;}
 .mobile_container .order-basket_count .order-basket_txt{ display: inline-block;}
-.mobile_container .order-basket_count .order-basket_txt .basket_count{display: inline-block; width: 65px; border: 1px solid #dbdbdb; margin-left: 5px;text-align: center;}
+.mobile_container .order-basket_count .order-basket_txt .basket_count{display: inline-block; width: 65px; border: 1px solid #dbdbdb; text-align: center;}
 .mobile_container .order-basket_count .order-basket_txt .basket_total{display: inline-block; width: 150px; border: 1px solid #dbdbdb; margin-left: 5px; padding-right: 20px; color:#e55d5d;}
 .mobile_container .order-basket_count .order-basket_btn{ display: inline-block; margin-left: 5px;}
 .mobile_container .order-basket_count .order-basket_btn button{ padding: 0 5px;}
-.mobile_container .order-amount_con {background: #f5f5f5;padding: 15px 20px;}
+.mobile_container .order-amount_con {background: #f5f5f5;padding: 30px 0;}
+.mobile_container .order-amount_con .order-amount_desc {line-height: 37px;}
 .mobile_container .order-amount_con .order-amount_date {font-weight: 300}
 .mobile_container .order-searchbox_con {text-align: center}
 .mobile_container .order-searchbox_con input {width: calc(100% - 73px); position: relative; right: -7px;}
@@ -899,8 +902,7 @@ input[type="radio"] + label:after{
 .mobile_container .order-amount_con.center_desc {text-align: center; margin: 25px 0;}
 .mobile_container .ver_input {text-align: center;padding: 105px 65px 85px 65px;}
 .mobile_container .ver_desc {text-align: center;font-size: 24px}
-.mobile_container .basket_desc {margin-bottom: 20px}
-.mobile_container .order_feature_con .info_box5 {margin: 0}
+.mobile_container .basket_desc {margin-top: 30px;font-size: 24px}
 .mobile_container .order_feature_con .info_box5 td>button {margin-bottom: 5px}
 .mobile_container .order_feature_con .order_feature_header {color: white;text-align: left;padding: 10px 12px; height: 56px; line-height: 35px}
 .mobile_container .order_feature_con .order_feature_header.primary_header {background-color: #3268b0}
@@ -918,6 +920,12 @@ input[type="radio"] + label:after{
 .responsive_box input[type=text],
 .responsive_box input[type=password],
 .responsive_box select{line-height: 65px;height: 35px;color: #555555; width: 100%;}
+.responsive_box .required:after{margin-left: 5px;}
+.responsive_box input[type="radio"] + label { line-height: 47px;padding-left: 47px;}
+.responsive_box input[type="radio"] + label {display: inline-block;width: 100%;}
+.responsive_box input[type="radio"] + label:before {width: 35px; height: 35px;}
+.responsive_box.has_input td { padding: 15px 25px;}
+.responsive_box.has_input textarea { height: 250px}
 /*mobile order*/
 
 /*shine*/
