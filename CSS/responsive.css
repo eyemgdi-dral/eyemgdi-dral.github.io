@@ -199,6 +199,9 @@
 		background: #f5f5f5;
 		letter-spacing: 0px;
 	}
+	.mobile_container.no-padding {
+		padding: 0;
+	}
 	.mobile_container *,
 	.mobile_container .info_box5 th,
 	.mobile_container .info_box5 td,
