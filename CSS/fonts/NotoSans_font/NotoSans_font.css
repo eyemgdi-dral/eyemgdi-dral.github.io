@@ -40,3 +40,9 @@
     font-weight: 700;
     src: url("NotoSansCJKkr-Black.otf") format("opentype");
 }
+
+@font-face {
+    font-family:'Noto Sans KR';
+    font-weight: bold;
+    src: url('NotoSansCJKkr-Medium.otf') format('opentype');
+}
