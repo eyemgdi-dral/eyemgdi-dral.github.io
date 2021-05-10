@@ -184,7 +184,7 @@
 	.responsive_box textarea
 	{
 		display:inline-block;
-		padding:10px;
+		padding:25px;
 		width:100%;
 	}
 
@@ -194,6 +194,7 @@
 		margin: 0 auto;
 		padding: 0 40px;
 		font-size: 0;
+		min-height: 63vh;
 	}
 	.mobile_container *,
 	.mobile_container .info_box5 th,
@@ -235,6 +236,9 @@
 	.mobile_footer p,
 	.mobile_footer p>span {
 		font-size: 26px;
+	}
+	.mobile_container .btn_box {
+		padding: 60px 0 100px 0;
 	}
 	.mobile_container .btn_box .bri_btn.btn_big {
 		font-size: 32px!important;
