@@ -168,16 +168,16 @@
 	.comms h1.highlight{font-size: 30px;height: 30px;}
 }
 
-@media only screen and (min-width: 0px) and (max-width: 720px) {
-	nav{height: 105px;position: relative;}
-	.btn_menu {width: 60px; left: 40px;line-height: 105px;}
-	.btn_menu .btn_icon:before {width: 50%; left: 0;top: 40px;}
-	.btn_menu .btn_icon:after {top: 20px;}
-	.btn_menu .btn_icon,
-	.btn_menu .btn_icon:after,
-	.btn_menu .btn_icon:before {height: 5px}
-	.login-con {padding: 0;line-height: 105px; margin: 23px 40px;}
-	.brand {top: 0}
+@media only screen and (min-width: 0px) and (max-width: 800px) {
+	nav.mobile_header {height: 105px;position: relative;}
+	.mobile_header .btn_menu {width: 60px; left: 40px;line-height: 105px;}
+	.mobile_header .btn_menu .btn_icon:before {width: 50%; left: 0;top: 40px;}
+	.mobile_header .btn_menu .btn_icon:after {top: 20px;}
+	.mobile_header .btn_menu .btn_icon,
+	.mobile_header .btn_menu .btn_icon:after,
+	.mobile_header .btn_menu .btn_icon:before {height: 5px}
+	.mobile_header .login-con {padding: 0;line-height: 105px; margin: 23px 40px;}
+	.mobile_header .brand {top: 0}
 
 	.responsive_box td,
 	.responsive_box th,

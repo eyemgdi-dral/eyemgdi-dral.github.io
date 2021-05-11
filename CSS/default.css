@@ -936,7 +936,7 @@ input[type="radio"] + label:after{
 .responsive_box input[type=password],
 .responsive_box select{line-height: 65px;height: 35px;color: #555555; width: 100%;}
 .responsive_box .required:after{margin-left: 5px;}
-.responsive_box input[type="radio"] + label8/  { line-height: 47px;padding-left: 47px;}
+.responsive_box input[type="radio"] + label { line-height: 47px;padding-left: 47px;}
 .responsive_box input[type="radio"] + label {display: inline-block;width: 100%;}
 .responsive_box input[type="radio"] + label:before {width: 35px; height: 35px; top: 7px;}
 .responsive_box.has_input td { padding: 15px 25px;}
