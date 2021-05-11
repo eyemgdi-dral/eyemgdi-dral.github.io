@@ -914,7 +914,15 @@ input[type="radio"] + label:after{
 .mobile_container .order_feature_con .info_box5 td>button {margin-bottom: 5px;line-height: 56px;height: 56px;width: 76px;}
 .mobile_container .order_feature_con .info_box5 td {padding: 20px 40px}
 .mobile_container .order_feature_con .info_box5 td>.order-feature_amount {float: right;font-weight: 400}
-.mobile_container .order_feature_con .box .row .card {width:calc((100% - 10px) / 2);display: inline-block;}
+.mobile_container .order_feature_con .order_feature_cardbox { padding: 25px 40px;}
+.mobile_container .order_feature_con .order_feature_cardbox .row .card {width:calc((100% - 26px) / 2);display: inline-block;margin-right: 20px;padding: 0;background: #ffffff;}
+.mobile_container .order_feature_con .order_feature_cardbox .row .card:nth-child(2) {margin-right: 0;}
+.mobile_container .order_feature_con .order_feature_cardbox .row .card .card-img {;background: #f1f1f1;}
+.mobile_container .order_feature_con .order_feature_cardbox .row .card .card-detail {padding: 30px 0; text-align: center}
+.mobile_container .order_feature_con .order_feature_cardbox .row .card .card-detail p:nth-child(2),
+.mobile_container .order_feature_con .order_feature_cardbox .row .card .card-detail p:nth-child(3){margin-top: 15px}
+.mobile_container .order_feature_con .order_feature_cardbox .row .card .card-detail button {font-size:27px;width: 77px;height: 55px;line-height: 55px; margin-top: 30px}
+
 
 
 .responsive_box{width: 100%;}
