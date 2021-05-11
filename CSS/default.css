@@ -921,7 +921,7 @@ input[type="radio"] + label:after{
 .mobile_container .order_feature_con .order_feature_cardbox .row .card .card-detail {padding: 30px 0; text-align: center}
 .mobile_container .order_feature_con .order_feature_cardbox .row .card .card-detail p:nth-child(2),
 .mobile_container .order_feature_con .order_feature_cardbox .row .card .card-detail p:nth-child(3){margin-top: 15px}
-.mobile_container .order_feature_con .order_feature_cardbox .row .card .card-detail button {font-size:27px;width: 77px;height: 55px;line-height: 55px; margin-top: 30px}
+.mobile_container .order_feature_con .order_feature_cardbox .row .card .card-detail button {font-size:27px;width: 76px;height: 55px;line-height: 55px; margin-top: 30px}
 
 
 

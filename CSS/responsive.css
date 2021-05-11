@@ -260,3 +260,61 @@
 		margin-bottom: 5px;
 	}
 }
+
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+	.mobile_container *,
+	.mobile_container .info_box5 th,
+	.mobile_container .info_box5 td,
+	.mobile_container .info_box5 td *,
+	.mobile_container .responsive_box th,
+	.mobile_container .responsive_box td,
+	.mobile_container .responsive_box td *,
+	.mobile_container input[type="radio"] + label,
+	.mobile_container input[type="checkbox"] + label,
+	.mobile_container input[type=text],
+	.mobile_container input[type=password],
+	.mobile_container input[type=number],
+	.mobile_container select,
+	.mobile_container button,
+	.mobile_container .basket_desc,
+	.mobile_container .ver_desc,
+	.mobile_header .brand .brand_title,
+	.mobile_container .order_feature_con .order_feature_cardbox .row .card .card-detail button
+	{
+		font-size: 16px;
+	}
+
+	.mobile_container input[type=text],
+	.mobile_container input[type=password],
+	.mobile_container select,
+	.mobile_container button,
+	.mobile_container .info_box5 button,
+	.mobile_container .info_box5 input[type=text],
+	.mobile_container .info_box5 select
+	{
+		line-height: 50px;
+		height: 50px;
+	}
+
+	.mobile_container .order-basket_count .order-basket_txt .basket_total {
+		width: 90px;
+	}
+	.mobile_container .order-basket_count .order-basket_txt .basket_count {
+		width: 45px;
+	}
+
+	.mobile_container .order-searchbox_con input {
+		height: 65px;
+		line-height: 65px;
+	}
+
+	.mobile_container .order-basket_count {
+		line-height: 50px;
+	}
+
+	.mobile_container .btn_box .bri_btn.btn_big {
+		font-size: 20px!important;
+		line-height: 50px;
+		height: 50px;
+	}
+}
